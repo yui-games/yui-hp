@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://yui-hp.pages.dev/sitemap.xml
