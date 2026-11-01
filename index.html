@@ -2,1051 +2,665 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>結い｜放課後等デイサービス・児童発達支援｜山梨県甲府市・笛吹市</title>
-<meta name="description" content="山梨県甲府市・笛吹市の放課後等デイサービス・児童発達支援『結い』。送迎あり・少人数制で、お子さま一人ひとりに合わせた療育を提供します。">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>結い｜甲府市の放課後等デイサービス・児童発達支援｜送迎あり</title>
+<meta name="description" content="山梨県甲府市の放課後等デイサービス「結い」（住吉）と児童発達支援「結い」（上曽根町）。送迎あり。見学・体験はいつでも受け付けています。">
 <link rel="canonical" href="https://yui-hp.pages.dev/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="結い">
-<meta property="og:title" content="結い｜放課後等デイサービス・児童発達支援｜山梨県甲府市・笛吹市">
-<meta property="og:description" content="山梨県甲府市・笛吹市の放課後等デイサービス・児童発達支援『結い』。送迎あり・少人数制で、お子さま一人ひとりに合わせた療育を提供します。">
+<meta property="og:title" content="結い｜甲府市の放課後等デイサービス・児童発達支援">
+<meta property="og:description" content="山梨県甲府市の放課後等デイサービス・児童発達支援「結い」。送迎あり。見学・体験はいつでも受け付けています。">
 <meta property="og:url" content="https://yui-hp.pages.dev/">
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary">
-<link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --primary: #3a7d6e;
-    --primary-light: #5aab97;
-    --primary-pale: #e8f4f1;
-    --accent: #f4a24d;
-    --accent2: #e07b8a;
-    --accent3: #6b9fd4;
-    --bg: #f7f9f8;
-    --bg2: #eef2f0;
-    --text: #1e2d2a;
-    --text-muted: #6b7b78;
-    --white: #ffffff;
-    --border: rgba(58,125,110,0.12);
-    --radius: 18px;
-    --shadow: 0 4px 24px rgba(58,125,110,0.08);
-    --office-a: #3a7d6e;
-    --office-b: #5a82c4;
-    --office-c: #b06dc0;
-  }
-
-  * { margin:0; padding:0; box-sizing:border-box; }
-  html { scroll-behavior:smooth; }
-  body { font-family:'Noto Sans JP',sans-serif; background:var(--bg); color:var(--text); overflow-x:hidden; }
-
-  /* ── NAV ── */
-  nav {
-    position:fixed; inset:0 0 auto 0; z-index:200; height:64px;
-    background:rgba(247,249,248,0.94); backdrop-filter:blur(14px);
-    border-bottom:1px solid var(--border);
-    display:flex; align-items:center; justify-content:space-between; padding:0 48px;
-  }
-  .nav-logo {
-    font-family:'BIZ UDPGothic',sans-serif; font-size:1.35rem; color:var(--primary);
-    display:flex; align-items:center; gap:10px; text-decoration:none;
-  }
-  .nav-logo-icon { width:34px; height:34px; display:flex; align-items:center; justify-content:center; }
-  .nav-links { display:flex; gap:28px; list-style:none; }
-  .nav-links a { text-decoration:none; color:var(--text-muted); font-size:0.83rem; font-weight:500; letter-spacing:0.04em; transition:color 0.2s; }
-  .nav-links a:hover { color:var(--primary); }
-  .nav-cta { background:var(--primary) !important; color:var(--white) !important; padding:7px 20px; border-radius:30px; }
-  .nav-cta:hover { opacity:0.85; }
-
-  /* ── HAMBURGER (mobile) ── */
-  .nav-toggle {
-    display:none; width:40px; height:40px; background:none; border:none; cursor:pointer;
-    padding:0; align-items:center; justify-content:center; border-radius:8px;
-  }
-  .nav-toggle:hover { background:rgba(58,125,110,0.08); }
-  .nav-toggle span {
-    display:block; width:22px; height:2px; background:var(--primary);
-    position:relative; transition:all 0.25s;
-  }
-  .nav-toggle span::before, .nav-toggle span::after {
-    content:''; position:absolute; left:0; width:22px; height:2px; background:var(--primary);
-    transition:all 0.25s;
-  }
-  .nav-toggle span::before { top:-7px; }
-  .nav-toggle span::after  { top:7px; }
-  .nav-toggle.open span { background:transparent; }
-  .nav-toggle.open span::before { top:0; transform:rotate(45deg); }
-  .nav-toggle.open span::after  { top:0; transform:rotate(-45deg); }
-
-  .mobile-menu {
-    display:none; position:fixed; top:64px; left:0; right:0; z-index:199;
-    background:var(--white); border-bottom:1px solid var(--border);
-    box-shadow:0 8px 24px rgba(0,0,0,0.08);
-    padding:20px 24px; flex-direction:column; gap:6px;
-  }
-  .mobile-menu.open { display:flex; }
-  .mobile-menu a {
-    display:block; padding:14px 16px; border-radius:10px;
-    text-decoration:none; color:var(--text); font-size:0.95rem; font-weight:500;
-    transition:background 0.2s;
-  }
-  .mobile-menu a:hover { background:var(--primary-pale); color:var(--primary); }
-  .mobile-menu a.mobile-cta {
-    background:var(--primary); color:var(--white); text-align:center;
-    margin-top:8px; font-weight:700;
-  }
-  .mobile-menu a.mobile-cta:hover { background:var(--primary-light); color:var(--white); }
-
-  /* ── HERO ── */
-  .hero {
-    min-height:90vh; display:flex; flex-direction:column;
-    align-items:center; justify-content:center;
-    text-align:center; padding:100px 40px 60px;
-    position:relative; overflow:hidden;
-  }
-  .hero-bg {
-    position:absolute; inset:0;
-    background:
-      radial-gradient(ellipse 70% 55% at 50% 40%, rgba(90,171,151,0.13) 0%, transparent 70%),
-      radial-gradient(ellipse 40% 35% at 15% 70%, rgba(244,162,77,0.1) 0%, transparent 65%),
-      radial-gradient(ellipse 40% 35% at 85% 70%, rgba(107,159,212,0.1) 0%, transparent 65%);
-  }
-  .blob { position:absolute; border-radius:50%; filter:blur(2px); animation:drift 8s ease-in-out infinite; }
-  .blob-1 { width:120px;height:120px; background:rgba(90,171,151,0.18); top:12%;left:8%; animation-delay:0s; }
-  .blob-2 { width:80px;height:80px; background:rgba(244,162,77,0.2); top:20%;right:10%; animation-delay:1.5s; }
-  .blob-3 { width:60px;height:60px; background:rgba(224,123,138,0.2); bottom:20%;left:12%; animation-delay:3s; }
-  .blob-4 { width:90px;height:90px; background:rgba(107,159,212,0.18); bottom:18%;right:8%; animation-delay:2s; }
-  @keyframes drift { 0%,100%{transform:translateY(0) scale(1)} 50%{transform:translateY(-18px) scale(1.05)} }
-
-  .hero-content { position:relative; z-index:2; max-width:680px; }
-  .hero-icon { margin-bottom:20px; animation:fadeUp 0.6s ease both; }
-  .hero-badge {
-    display:inline-flex; align-items:center; gap:7px;
-    font-size:0.77rem; font-weight:700; letter-spacing:0.1em;
-    color:var(--primary); background:var(--primary-pale);
-    border:1px solid rgba(58,125,110,0.18); padding:5px 16px;
-    border-radius:20px; margin-bottom:20px;
-    animation:fadeUp 0.6s 0.05s ease both;
-  }
-  .hero-title {
-    font-family:'BIZ UDPGothic',sans-serif;
-    font-size:clamp(3rem,8vw,5rem);
-    line-height:1.15; margin-bottom:16px;
-    color:var(--text);
-    animation:fadeUp 0.6s 0.1s ease both;
-  }
-  .hero-sub {
-    font-size:0.95rem; color:var(--text-muted); line-height:1.9;
-    margin-bottom:32px; font-weight:300;
-    animation:fadeUp 0.6s 0.15s ease both;
-  }
-  .hero-btns { display:flex; gap:14px; justify-content:center; flex-wrap:wrap; animation:fadeUp 0.6s 0.2s ease both; }
-  @keyframes fadeUp { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:translateY(0)} }
-
-  .btn { display:inline-block; padding:13px 30px; border-radius:40px; font-weight:700; font-size:0.9rem; letter-spacing:0.05em; text-decoration:none; transition:all 0.22s; }
-  .btn-fill { background:var(--primary); color:var(--white); box-shadow:0 4px 18px rgba(58,125,110,0.28); }
-  .btn-fill:hover { background:var(--primary-light); transform:translateY(-2px); }
-  .btn-outline { border:2px solid var(--primary); color:var(--primary); }
-  .btn-outline:hover { background:var(--primary); color:var(--white); }
-
-  /* ── OFFICE SECTION ── */
-  #offices { background:var(--bg2); }
-  .office-section { max-width:1140px; margin:0 auto; padding:80px 48px; }
-  .office-section-header { text-align:center; margin-bottom:36px; }
-  .section-label { font-size:0.72rem; font-weight:700; letter-spacing:0.15em; color:var(--primary); text-transform:uppercase; margin-bottom:8px; }
-  .section-title { font-family:'BIZ UDPGothic',sans-serif; font-size:clamp(1.7rem,3vw,2.3rem); line-height:1.3; margin-bottom:10px; }
-  .section-desc { font-size:0.9rem; color:var(--text-muted); line-height:1.85; }
-
-  /* ── TABS ── */
-  .tab-bar {
-    display:flex; gap:8px; justify-content:center; flex-wrap:wrap;
-    margin-bottom:36px;
-    position:sticky; top:64px; z-index:99;
-    background:var(--bg2); padding:14px 0;
-    border-bottom:1px solid var(--border);
-  }
-  .tab-btn {
-    display:flex; align-items:center; gap:8px;
-    padding:11px 22px; border-radius:50px; border:2px solid transparent;
-    background:var(--white); cursor:pointer;
-    font-family:'Noto Sans JP',sans-serif; font-size:0.85rem; font-weight:700;
-    color:var(--text-muted); transition:all 0.22s; box-shadow:var(--shadow);
-    white-space:nowrap;
-  }
-  .tab-btn:hover { color:var(--text); border-color:rgba(58,125,110,0.2); }
-  .tab-btn.active-a { background:var(--office-a); color:var(--white); border-color:var(--office-a); }
-  .tab-btn.active-b { background:var(--office-b); color:var(--white); border-color:var(--office-b); }
-  .tab-btn.active-c { background:var(--office-c); color:var(--white); border-color:var(--office-c); }
-  .tab-icon { width:26px;height:26px; border-radius:50%; background:rgba(255,255,255,0.25); display:flex; align-items:center; justify-content:center; font-size:0.85rem; }
-
-  .tab-pane { display:none; animation:fadeTab 0.35s ease both; }
-  .tab-pane.active { display:block; }
-  @keyframes fadeTab { from{opacity:0;transform:translateY(12px)} to{opacity:1;transform:translateY(0)} }
-
-  /* ── OFFICE CARD ── */
-  .office-info-card { display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-bottom:40px; }
-
-  .office-hero-block {
-    background:var(--white); border-radius:var(--radius); padding:36px;
-    box-shadow:var(--shadow); display:flex; flex-direction:column;
-    justify-content:space-between; position:relative; overflow:hidden;
-  }
-  .office-hero-block::before { content:''; position:absolute; top:0;left:0;right:0; height:4px; }
-  .pane-a .office-hero-block::before { background:linear-gradient(90deg,var(--office-a),#7ec4b6); }
-  .pane-b .office-hero-block::before { background:linear-gradient(90deg,var(--office-b),#8facdc); }
-  .pane-c .office-hero-block::before { background:linear-gradient(90deg,var(--office-c),#cc99d9); }
-
-  .office-name { font-family:'BIZ UDPGothic',sans-serif; font-size:1.5rem; margin-bottom:8px; }
-  .office-type-badges { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:18px; }
-  .type-badge { font-size:0.73rem; font-weight:700; letter-spacing:0.05em; padding:4px 12px; border-radius:20px; }
-  .pane-a .type-badge { background:rgba(58,125,110,0.1); color:var(--office-a); }
-  .pane-b .type-badge { background:rgba(90,130,196,0.1); color:var(--office-b); }
-  .pane-c .type-badge { background:rgba(176,109,192,0.1); color:var(--office-c); }
-
-  .office-desc { font-size:0.88rem; color:var(--text-muted); line-height:1.8; margin-bottom:24px; }
-
-  .office-meta { display:flex; flex-direction:column; gap:10px; }
-  .meta-row { display:flex; align-items:flex-start; gap:10px; font-size:0.85rem; }
-  .meta-icon { width:28px;height:28px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:0.85rem; flex-shrink:0; }
-  .pane-a .meta-icon { background:rgba(58,125,110,0.1); }
-  .pane-b .meta-icon { background:rgba(90,130,196,0.1); }
-  .pane-c .meta-icon { background:rgba(176,109,192,0.1); }
-  .meta-label { color:var(--text-muted); font-size:0.78rem; }
-  .meta-value { font-weight:500; }
-
-  .office-stats { background:var(--white); border-radius:var(--radius); padding:32px; box-shadow:var(--shadow); display:grid; grid-template-columns:1fr 1fr; gap:16px; align-content:start; }
-  .stat-item { padding:18px; border-radius:12px; text-align:center; }
-  .pane-a .stat-item { background:rgba(58,125,110,0.06); }
-  .pane-b .stat-item { background:rgba(90,130,196,0.06); }
-  .pane-c .stat-item { background:rgba(176,109,192,0.06); }
-  .stat-num { font-family:'BIZ UDPGothic',sans-serif; font-size:1.5rem; font-weight:700; line-height:1; margin-bottom:6px; }
-  .pane-a .stat-num { color:var(--office-a); }
-  .pane-b .stat-num { color:var(--office-b); }
-  .pane-c .stat-num { color:var(--office-c); }
-  .stat-label { font-size:0.76rem; color:var(--text-muted); }
-
-  /* ── SUB SECTIONS ── */
-  .sub-section { margin-bottom:40px; }
-  .sub-title { font-family:'BIZ UDPGothic',sans-serif; font-size:1.15rem; margin-bottom:16px; display:flex; align-items:center; gap:10px; }
-  .sub-title::before { content:''; width:4px;height:20px; border-radius:2px; }
-  .pane-a .sub-title::before { background:var(--office-a); }
-  .pane-b .sub-title::before { background:var(--office-b); }
-  .pane-c .sub-title::before { background:var(--office-c); }
-
-  /* Timeline */
-  .timeline-strip { display:flex; background:var(--white); border-radius:var(--radius); box-shadow:var(--shadow); overflow:hidden; }
-  .tl-item { flex:1; padding:20px 12px; text-align:center; border-right:1px solid var(--border); }
-  .tl-item:last-child { border-right:none; }
-  .tl-emoji { font-size:1.3rem; margin-bottom:7px; }
-  .tl-time { font-size:0.72rem; font-weight:700; color:var(--text-muted); letter-spacing:0.05em; margin-bottom:4px; }
-  .tl-time-none { font-size:0.68rem; color:var(--border); letter-spacing:0.03em; margin-bottom:4px; font-style:italic; }
-
-  .tl-label { font-size:0.8rem; font-weight:500; line-height:1.4; }
-
-  /* Staff */
-  .staff-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr)); gap:16px; }
-  .staff-card { background:var(--white); border-radius:var(--radius); padding:26px 20px; text-align:center; box-shadow:var(--shadow); transition:transform 0.22s; }
-  .staff-card:hover { transform:translateY(-3px); }
-  .staff-avatar { width:72px;height:72px; border-radius:50%; margin:0 auto 12px; display:flex; align-items:center; justify-content:center; font-size:1.8rem; }
-  .pane-a .staff-avatar { background:rgba(58,125,110,0.1); }
-  .pane-b .staff-avatar { background:rgba(90,130,196,0.1); }
-  .pane-c .staff-avatar { background:rgba(176,109,192,0.1); }
-  .staff-name { font-family:'BIZ UDPGothic',sans-serif; font-size:1rem; margin-bottom:5px; }
-  .staff-role { display:inline-block; font-size:0.72rem; font-weight:700; letter-spacing:0.04em; padding:3px 10px; border-radius:20px; }
-  .pane-a .staff-role { background:rgba(58,125,110,0.1); color:var(--office-a); }
-  .pane-b .staff-role { background:rgba(90,130,196,0.1); color:var(--office-b); }
-  .pane-c .staff-role { background:rgba(176,109,192,0.1); color:var(--office-c); }
-
-  /* FAQ */
-  .faq-list { display:flex; flex-direction:column; gap:10px; }
-  .faq-item { background:var(--white); border-radius:12px; box-shadow:var(--shadow); overflow:hidden; border:1px solid transparent; transition:border-color 0.2s; }
-  .pane-a .faq-item:hover { border-color:rgba(58,125,110,0.2); }
-  .pane-b .faq-item:hover { border-color:rgba(90,130,196,0.2); }
-  .pane-c .faq-item:hover { border-color:rgba(176,109,192,0.2); }
-  .faq-q { padding:17px 22px; font-weight:700; font-size:0.88rem; cursor:pointer; display:flex; justify-content:space-between; align-items:center; gap:10px; user-select:none; }
-  .faq-icon { width:24px;height:24px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:1rem; font-weight:300; flex-shrink:0; transition:transform 0.28s; color:var(--white); }
-  .pane-a .faq-icon { background:var(--office-a); }
-  .pane-b .faq-icon { background:var(--office-b); }
-  .pane-c .faq-icon { background:var(--office-c); }
-  .faq-item.open .faq-icon { transform:rotate(45deg); }
-  .faq-a { max-height:0; overflow:hidden; transition:max-height 0.32s ease,padding 0.28s; padding:0 22px; font-size:0.85rem; color:var(--text-muted); line-height:1.85; }
-  .faq-item.open .faq-a { max-height:300px; padding:0 22px 16px; }
-
-  /* Fee */
-  .fee-grid { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
-  .fee-card { background:var(--white); border-radius:var(--radius); padding:26px; box-shadow:var(--shadow); }
-  .fee-card h4 { font-family:'BIZ UDPGothic',sans-serif; font-size:1rem; margin-bottom:14px; display:flex; align-items:center; gap:8px; }
-  .fee-tag { font-size:0.68rem; font-weight:700; padding:3px 9px; border-radius:20px; }
-  .pane-a .fee-tag { background:rgba(58,125,110,0.1); color:var(--office-a); }
-  .pane-b .fee-tag { background:rgba(90,130,196,0.1); color:var(--office-b); }
-  .pane-c .fee-tag { background:rgba(176,109,192,0.1); color:var(--office-c); }
-  .fee-row { display:flex; justify-content:space-between; align-items:center; padding:10px 0; border-bottom:1px solid var(--border); font-size:0.85rem; }
-  .fee-row:last-child { border-bottom:none; }
-  .fee-row strong { font-size:1rem; }
-  .pane-a .fee-row strong { color:var(--office-a); }
-  .pane-b .fee-row strong { color:var(--office-b); }
-  .pane-c .fee-row strong { color:var(--office-c); }
-  .fee-note { grid-column:1/-1; background:var(--white); border-radius:12px; padding:16px 20px; font-size:0.8rem; color:var(--text-muted); line-height:1.8; box-shadow:var(--shadow); }
-
-  /* ── CONTACT ── */
-  .contact-section { background:linear-gradient(135deg,#2e6b5e 0%,#3a7d6e 50%,#5aab97 100%); padding:80px 48px; text-align:center; }
-  .contact-inner { max-width:740px; margin:0 auto; }
-  .contact-section h2 { font-family:'BIZ UDPGothic',sans-serif; font-size:clamp(1.7rem,4vw,2.3rem); color:var(--white); margin-bottom:12px; }
-  .contact-section p { color:rgba(255,255,255,0.82); font-size:0.9rem; line-height:1.85; margin-bottom:36px; }
-  .contact-cards { display:flex; gap:16px; justify-content:center; flex-wrap:wrap; }
-
-  /* フォーム */
-  .contact-form-wrap { background:rgba(255,255,255,0.12); backdrop-filter:blur(10px); border:1px solid rgba(255,255,255,0.2); border-radius:var(--radius); padding:32px 36px; margin-top:32px; text-align:left; }
-  .form-row { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:14px; }
-  .form-group { display:flex; flex-direction:column; gap:6px; }
-  .form-group.full { grid-column:1/-1; }
-  .form-label { font-size:0.78rem; font-weight:700; color:rgba(255,255,255,0.9); letter-spacing:0.05em; }
-  .form-label span { font-size:0.68rem; color:rgba(255,255,255,0.55); font-weight:400; margin-left:4px; }
-  .form-input, .form-select, .form-textarea {
-    padding:10px 14px; border-radius:10px; border:1.5px solid rgba(255,255,255,0.25);
-    background:rgba(255,255,255,0.15); color:var(--white);
-    font-family:'Noto Sans JP',sans-serif; font-size:0.88rem;
-    transition:border-color 0.2s; width:100%;
-  }
-  .form-input::placeholder, .form-textarea::placeholder { color:rgba(255,255,255,0.45); }
-  .form-input:focus, .form-select:focus, .form-textarea:focus { outline:none; border-color:rgba(255,255,255,0.7); background:rgba(255,255,255,0.22); }
-  .form-select { appearance:none; cursor:pointer; }
-  .form-select option { color:var(--text); background:var(--white); }
-  .form-textarea { resize:vertical; min-height:100px; line-height:1.7; }
-  .form-check-group { display:flex; flex-direction:column; gap:8px; }
-  .form-check { display:flex; align-items:center; gap:8px; cursor:pointer; font-size:0.85rem; color:rgba(255,255,255,0.9); }
-  .form-check input { width:16px; height:16px; accent-color:var(--primary-light); cursor:pointer; }
-  .form-submit {
-    width:100%; padding:14px; margin-top:20px;
-    background:var(--white); color:var(--primary);
-    border:none; border-radius:40px;
-    font-family:'BIZ UDPGothic',sans-serif; font-size:1rem; font-weight:700;
-    cursor:pointer; transition:all 0.22s; letter-spacing:0.05em;
-  }
-  .form-submit:hover { background:var(--primary-pale); transform:translateY(-1px); }
-  .form-note { font-size:0.75rem; color:rgba(255,255,255,0.55); margin-top:12px; text-align:center; line-height:1.7; }
-  @media (max-width:640px) {
-    .form-row { grid-template-columns:1fr; }
-    .contact-form-wrap { padding:24px 20px; }
-  }
-  .contact-card { background:rgba(255,255,255,0.14); backdrop-filter:blur(10px); border:1px solid rgba(255,255,255,0.22); border-radius:var(--radius); padding:22px 28px; color:var(--white); text-decoration:none; transition:all 0.22s; min-width:180px; }
-  .contact-card:hover { background:rgba(255,255,255,0.22); transform:translateY(-3px); }
-  .cc-icon { font-size:1.5rem; margin-bottom:7px; }
-  .cc-label { font-size:0.72rem; opacity:0.75; margin-bottom:3px; }
-  .cc-value { font-weight:700; font-size:0.95rem; }
-
-  /* ── FOOTER ── */
-  footer { background:#162420; color:rgba(255,255,255,0.6); padding:48px 48px 26px; }
-  .footer-inner { max-width:1140px; margin:0 auto; }
-  .footer-grid { display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:40px; padding-bottom:32px; border-bottom:1px solid rgba(255,255,255,0.08); margin-bottom:22px; }
-  .footer-logo { font-family:'BIZ UDPGothic',sans-serif; font-size:1.25rem; color:var(--white); display:flex; align-items:center; gap:8px; margin-bottom:10px; }
-  .footer-logo-icon { width:28px;height:28px; display:flex; align-items:center; justify-content:center; }
-  .footer-brand-desc { font-size:0.78rem; line-height:1.8; max-width:240px; }
-  .footer-col h4 { color:var(--white); font-size:0.78rem; font-weight:700; letter-spacing:0.05em; margin-bottom:12px; }
-  .footer-col ul { list-style:none; display:flex; flex-direction:column; gap:7px; }
-  .footer-col a { text-decoration:none; color:rgba(255,255,255,0.55); font-size:0.78rem; transition:color 0.2s; }
-  .footer-col a:hover { color:var(--white); }
-  .footer-bottom { text-align:center; font-size:0.74rem; opacity:0.4; }
-
-  .reveal { opacity:0; transform:translateY(18px); transition:opacity 0.6s ease,transform 0.6s ease; }
-  .reveal.visible { opacity:1; transform:translateY(0); }
-
-  @media (max-width:900px) {
-    nav { padding:0 20px; }
-    .nav-links { display:none; }
-    .nav-toggle { display:flex; }
-    .hero { padding:90px 20px 60px; min-height:80vh; }
-    .hero-sub { font-size:0.9rem; }
-    .office-section { padding:48px 18px; }
-    .office-hero-block { padding:24px 20px; }
-    .office-stats { padding:22px 18px; }
-    .office-info-card { grid-template-columns:1fr; }
-    .fee-grid { grid-template-columns:1fr; }
-    .fee-card { padding:22px 18px; }
-    .footer-grid { grid-template-columns:1fr 1fr; }
-    .timeline-strip { flex-wrap:wrap; }
-    .tl-item { flex:0 0 33.33%; border-right:none; border-bottom:1px solid var(--border); padding:16px 8px; }
-    .contact-section { padding:56px 18px; }
-    .contact-form-wrap { padding:24px 18px; }
-    .tab-bar { padding:10px 14px; gap:6px; }
-    .tab-btn { padding:9px 14px; font-size:0.78rem; }
-    .tab-icon { width:22px; height:22px; }
-    footer { padding:36px 20px 22px; }
-  }
-  @media (max-width:480px) {
-    .hero-title { line-height:1.1; }
-    .hero-btns { flex-direction:column; width:100%; }
-    .hero-btns .btn { width:100%; text-align:center; }
-    .office-name { font-size:1.25rem; }
-    .sub-title { font-size:1.05rem; }
-    .form-row { grid-template-columns:1fr !important; }
-    .footer-grid { grid-template-columns:1fr; }
-  }
-
-  /* 受け入れ状況 */
-  .capacity-grid { display:flex; gap:10px; margin-bottom:16px; }
-  .cap-item { flex:1; min-width:0; background:#fff; border:1.5px solid var(--border); border-radius:14px; padding:14px 8px; text-align:center; box-shadow:0 2px 8px rgba(58,125,110,0.06); }
-  .cap-day { font-size:0.85rem; color:var(--text-muted); margin-bottom:6px; font-weight:600; }
-  .cap-mark { font-size:1.6rem; font-weight:700; line-height:1; }
-  .cap-o { color:#3a7d6e; }
-  .cap-t { color:#e07b8a; }
-  .cap-x { color:#c44; }
-  .capacity-legend { display:flex; flex-wrap:wrap; gap:14px; padding:12px; background:#f7f9f8; border-radius:12px; font-size:0.85rem; color:var(--text-muted); }
-  .legend-item { display:flex; align-items:center; gap:6px; }
-  .legend-mark { font-size:1.1rem; font-weight:700; }
-
-  
-  /* セクション区切り（ウェーブ） */
-  .section-divider { line-height:0; background:var(--bg); }
-  .section-divider svg { display:block; width:100%; height:72px; }
-
-  /* 共通FAQセクション */
-  .faq-section { background:var(--primary-pale); padding:64px 48px 80px; position:relative; }
-  .faq-inner { max-width:920px; margin:0 auto; }
-  .faq-title { font-family:'BIZ UDPGothic',sans-serif; font-size:clamp(1.5rem,3vw,2rem); color:var(--text); text-align:center; margin-bottom:36px; }
-  .faq-cat-title { font-size:1.05rem; color:var(--primary); margin:28px 0 14px; padding:4px 0 4px 12px; border-left:4px solid var(--primary); line-height:1.3; }
-  .faq-shared > .faq-cat-title:first-of-type { margin-top:0; }
-  .faq-shared .faq-icon { background:var(--primary); }
-  .faq-shared .faq-item:hover { border-color:rgba(58,125,110,0.2); }
-  @media (max-width:780px) {
-    .section-divider svg { height:48px; }
-    .faq-section { padding:48px 18px 56px; }
-    .faq-title { margin-bottom:24px; }
-    .faq-cat-title { font-size:0.95rem; }
-  }
-
-  </style>
+<meta name="theme-color" content="#1f7a3e">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Ccircle%20cx%3D%2232%22%20cy%3D%2232%22%20r%3D%2230%22%20fill%3D%22%233a8f7a%22%2F%3E%3Ctext%20x%3D%2232%22%20y%3D%2244%22%20text-anchor%3D%22middle%22%20font-family%3D%22sans-serif%22%20font-weight%3D%22700%22%20font-size%3D%2236%22%20fill%3D%22%23fff%22%3E%E7%B5%90%3C%2Ftext%3E%3C%2Fsvg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700;800&family=BIZ+UDPGothic:wght@400;700&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://yui-hp.pages.dev/#org",
-      "name": "株式会社仁-JIN-",
-      "url": "https://yui-hp.pages.dev/",
-      "areaServed": ["山梨県甲府市", "山梨県笛吹市"]
-    },
-    {
-      "@type": "ChildCare",
-      "@id": "https://yui-hp.pages.dev/#houkago-yui",
-      "name": "放課後等デイサービス結い",
-      "description": "山梨県甲府市の放課後等デイサービス。小学生〜高校生（6歳〜18歳）対象。学校放課後・学校休業日に利用できる療育支援サービス。送迎あり。",
-      "url": "https://yui-hp.pages.dev/#pane-a",
-      "telephone": "+81-70-9047-7573",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "住吉5丁目3-27",
-        "addressLocality": "甲府市",
-        "addressRegion": "山梨県",
-        "addressCountry": "JP"
-      },
-      "openingHoursSpecification": [
-        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "11:00", "closes": "17:30"}
-      ],
-      "parentOrganization": {"@id": "https://yui-hp.pages.dev/#org"},
-      "areaServed": "山梨県甲府市住吉エリア"
-    },
-    {
-      "@type": "ChildCare",
-      "@id": "https://yui-hp.pages.dev/#yui-jihatsu",
-      "name": "児童発達支援結い",
-      "description": "山梨県甲府市上曽根の児童発達支援事業所。未就学児（0歳〜6歳）対象。送迎あり。",
-      "url": "https://yui-hp.pages.dev/#pane-b",
-      "telephone": "+81-90-8573-7520",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "上曽根町208-1",
-        "addressLocality": "甲府市",
-        "addressRegion": "山梨県",
-        "addressCountry": "JP"
-      },
-      "openingHoursSpecification": [
-        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "16:00"}
-      ],
-      "parentOrganization": {"@id": "https://yui-hp.pages.dev/#org"},
-      "areaServed": "山梨県甲府市上曽根エリア"
-    },
-    {
-      "@type": "ChildCare",
-      "@id": "https://yui-hp.pages.dev/#yui-fuefuki",
-      "name": "児童発達支援結いふえふき",
-      "description": "山梨県笛吹市石和の児童発達支援事業所。未就学児（0歳〜6歳）対象。送迎あり。",
-      "url": "https://yui-hp.pages.dev/#pane-c",
-      "telephone": "+81-90-3601-5212",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "石和町下平井356-3",
-        "addressLocality": "笛吹市",
-        "addressRegion": "山梨県",
-        "addressCountry": "JP"
-      },
-      "openingHoursSpecification": [
-        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:30", "closes": "16:00"}
-      ],
-      "parentOrganization": {"@id": "https://yui-hp.pages.dev/#org"},
-      "areaServed": "山梨県笛吹市石和エリア"
-    }
+    {"@type": "Organization", "@id": "https://yui-hp.pages.dev/#org", "name": "株式会社仁-JIN-", "url": "https://yui-hp.pages.dev/", "areaServed": "山梨県甲府市"},
+    {"@type": "ChildCare", "@id": "https://yui-hp.pages.dev/#houkago", "name": "放課後等デイサービス結い",
+     "description": "山梨県甲府市住吉の放課後等デイサービス。小学生〜高校生対象。送迎あり。",
+     "url": "https://yui-hp.pages.dev/#houkago", "telephone": "+81-70-9047-7573", "faxNumber": "+81-55-213-5878",
+     "address": {"@type": "PostalAddress", "streetAddress": "住吉5丁目3-27", "addressLocality": "甲府市", "addressRegion": "山梨県", "addressCountry": "JP"},
+     "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "11:00", "closes": "17:30"}],
+     "parentOrganization": {"@id": "https://yui-hp.pages.dev/#org"}},
+    {"@type": "ChildCare", "@id": "https://yui-hp.pages.dev/#jihatsu", "name": "児童発達支援結い",
+     "description": "山梨県甲府市上曽根町の児童発達支援事業所。未就学のお子さま対象。送迎あり。",
+     "url": "https://yui-hp.pages.dev/#jihatsu", "telephone": "+81-90-8573-7520", "faxNumber": "+81-55-213-5878",
+     "address": {"@type": "PostalAddress", "streetAddress": "上曽根町208-1", "addressLocality": "甲府市", "addressRegion": "山梨県", "addressCountry": "JP"},
+     "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "16:00"}],
+     "parentOrganization": {"@id": "https://yui-hp.pages.dev/#org"}}
   ]
 }
 </script>
+<style>
+  /* v12（2026-11-01）：本人が選んだ ChatGPT デザイン B案（白地・明るい緑と水色・余白広め・富士山と湖の風景）の見た目 */
+  :root{
+    --bg:#ffffff; --bg2:#f4faf3; --bg3:#f2f8fd; --card:#ffffff;
+    --ink:#24352c; --sub:#55665c; --line:#dfeadf;
+    --green:#23853f; --green-d:#1f7a3e; --green-dd:#17602f; --green-l:#eaf6e7;
+    --blue:#2f7fc1; --blue-d:#21649e; --blue-l:#e7f2fb;
+    --leaf:#7cc576;
+    --r:18px; --shadow:0 4px 18px rgba(36,53,44,.08);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;scroll-padding-top:76px}
+  body{background:var(--bg);color:var(--ink);font-family:"BIZ UDPGothic","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;font-size:16px;line-height:1.9;-webkit-text-size-adjust:100%;overflow-x:hidden}
+  img{max-width:100%}
+  a{color:inherit}
+  svg.i{width:1em;height:1em;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+  .round,h1,h2,h3{font-family:"M PLUS Rounded 1c","BIZ UDPGothic",sans-serif}
+  .yui{font-family:"M PLUS Rounded 1c",sans-serif;font-weight:800;letter-spacing:.04em;white-space:nowrap}
+
+  /* ヘッダー */
+  header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);box-shadow:0 1px 0 var(--line),0 2px 12px rgba(36,53,44,.05)}
+  .hbar{display:flex;align-items:center;justify-content:space-between;gap:12px;height:64px}
+  .logo{display:flex;align-items:baseline;gap:10px;text-decoration:none}
+  .logo b{font-family:"M PLUS Rounded 1c",sans-serif;font-weight:800;font-size:30px;color:var(--green-d);letter-spacing:.06em;line-height:1}
+  .logo small{font-size:11px;color:var(--sub);font-weight:700}
+  .gnav{display:flex;align-items:center;gap:2px}
+  .gnav a{text-decoration:none;font-size:14px;font-weight:700;padding:8px 12px;border-radius:999px;color:var(--ink)}
+  .gnav a:hover{background:var(--green-l);color:var(--green-d)}
+  .gnav .cta{background:var(--green);color:#fff;padding:10px 20px;margin-left:8px;box-shadow:0 3px 0 var(--green-dd)}
+  .gnav .cta:hover{background:var(--green-d);color:#fff}
+  .menu-btn{display:none;width:44px;height:44px;border-radius:10px;border:2px solid var(--green);background:#fff;color:var(--green-d);font-size:22px;cursor:pointer;place-items:center}
+  .menu-btn svg.i{width:24px;height:24px;stroke-width:2.4}
+  @media (max-width:900px){
+    .logo small{display:none}
+    .menu-btn{display:grid}
+    .gnav{display:none;position:absolute;left:12px;right:12px;top:70px;flex-direction:column;align-items:stretch;background:#fff;border-radius:var(--r);box-shadow:0 10px 30px rgba(36,53,44,.18);padding:10px}
+    .gnav.open{display:flex}
+    .gnav a{padding:13px 16px;font-size:16px;border-bottom:1px solid var(--line);border-radius:10px}
+    .gnav .cta{margin:8px 0 0;text-align:center;border-bottom:0}
+  }
+
+  /* ヒーロー（富士山・湖・若葉はSVGで描いている。外部画像なし） */
+  .hero{position:relative;overflow:hidden;padding:56px 0 64px;background:linear-gradient(180deg,#cfe7f6 0,#e9f4fb 45%,#fff 100%)}
+  .hero .bg{position:absolute;inset:0;width:100%;height:100%}
+  .hero .bg.sp{display:none}
+  .hero-in{position:relative}
+  /* ChatGPTの絵（assets/hero.png）が入ったときは、手描きの風景の代わりに表示 */
+  .hero .bgimg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:right center}
+  .hero.has-img .bg{display:none!important}
+  .hero.has-img::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(255,255,255,.75) 0,rgba(255,255,255,.35) 45%,rgba(255,255,255,0) 65%);pointer-events:none}
+  .hero.has-img .hero-in{z-index:1}
+  .area{display:inline-block;background:var(--green);color:#fff;font-weight:700;font-size:15px;border-radius:8px;padding:3px 16px;margin-bottom:14px;box-shadow:0 2px 0 var(--green-dd)}
+  h1.catch{font-weight:800;font-size:clamp(26px,4.2vw,44px);line-height:1.45;color:#183326;margin-bottom:28px;text-shadow:0 0 12px rgba(255,255,255,.9),0 0 3px #fff}
+  h1.catch span{display:block}
+  h1.catch em{font-style:normal;color:var(--green-d)}
+  .badges{display:grid;grid-template-columns:repeat(3,minmax(0,250px));gap:14px;margin-bottom:26px}
+  .badges div{display:flex;align-items:center;gap:12px;background:#fff;border-radius:14px;box-shadow:var(--shadow);border:1px solid var(--line);padding:14px 16px;font-weight:700;font-size:15px;line-height:1.5}
+  .badges svg.i{width:34px;height:34px;color:var(--green)}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;font-weight:700;border-radius:999px;padding:16px 34px;font-size:17px;border:0;cursor:pointer;font-family:inherit}
+  .btn svg.i{width:22px;height:22px}
+  .btn-g{background:var(--green);color:#fff;box-shadow:0 5px 0 var(--green-dd)}
+  .btn-g:hover{transform:translateY(2px);box-shadow:0 3px 0 var(--green-dd)}
+  @media (max-width:760px){
+    .hero{padding:26px 0 40px}
+    .hero .bg.pc{display:none}.hero .bg.sp{display:block}
+    /* スマホでは絵を文字の後ろに敷かず、ボタンの下に帯で出す */
+    .hero.has-img{padding-bottom:calc(50vw + 16px)}
+    .hero.has-img .bgimg{top:auto;height:50vw;object-position:85% 75%;-webkit-mask-image:linear-gradient(transparent,#000 22%);mask-image:linear-gradient(transparent,#000 22%)}
+    .hero.has-img::after{display:none}
+    .badges{grid-template-columns:repeat(3,1fr);gap:8px}
+    .badges div{flex-direction:column;gap:4px;text-align:center;padding:10px 6px;font-size:13px;word-break:keep-all}
+    .badges svg.i{width:30px;height:30px}
+    .hero .btn{width:100%;padding:15px 18px}
+  }
+
+  /* セクション共通：左に緑の縦線＋薄緑の帯 */
+  section{padding:60px 0}
+  .alt{background:var(--bg2)}
+  .sky{background:var(--bg3)}
+  .sec-h{margin-bottom:26px}
+  .sec-h h2{position:relative;font-weight:800;font-size:clamp(21px,3vw,28px);line-height:1.5;padding:8px 16px 8px 20px;background:linear-gradient(90deg,var(--green-l) 0,rgba(234,246,231,0) 85%);border-radius:4px}
+  .sec-h h2::before{content:"";position:absolute;left:0;top:6px;bottom:6px;width:6px;border-radius:3px;background:var(--green)}
+  .sec-h p{color:var(--sub);margin-top:10px}
+  .card{background:var(--card);border-radius:var(--r);box-shadow:var(--shadow);border:1px solid var(--line);padding:24px}
+  .grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+  @media (max-width:700px){.grid2{grid-template-columns:1fr;gap:14px}}
+  .note{font-size:14px;color:var(--sub);margin-top:16px}
+  .note li{margin-left:1.2em}
+
+  /* サービスとは */
+  .svc{display:flex;gap:18px;align-items:center;border:0;padding:22px}
+  .svc.g{background:var(--green-l)} .svc.b{background:var(--blue-l)}
+  .svc .pic{flex:none;width:96px;height:96px}
+  .svc .tag{display:inline-block;font-size:12px;font-weight:700;color:#fff;background:var(--green-d);border-radius:999px;padding:1px 12px}
+  .svc.b .tag{background:var(--blue-d)}
+  .svc h3{font-weight:800;font-size:21px;color:var(--green-d);margin:4px 0 4px}
+  .svc.b h3{color:var(--blue-d)}
+  .svc p{font-size:15px}
+  @media (max-width:480px){.svc{padding:16px;gap:12px}.svc .pic{width:70px;height:70px}}
+
+  /* お悩み */
+  .worry{list-style:none;display:grid;grid-template-columns:repeat(2,1fr);gap:4px 32px;max-width:900px}
+  .worry li{position:relative;padding:9px 0 9px 38px;font-weight:700;border-bottom:1px dashed var(--line)}
+  .worry li::before{content:"";position:absolute;left:0;top:12px;width:24px;height:24px;border-radius:5px;background:var(--green) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 12.5l4 4 8-9' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/18px no-repeat}
+  @media (max-width:700px){.worry{grid-template-columns:1fr}}
+  .worry-foot{margin-top:22px;font-family:"M PLUS Rounded 1c",sans-serif;font-weight:800;font-size:clamp(17px,2.4vw,21px)}
+  .worry-foot em{font-style:normal;color:var(--green-d);background:linear-gradient(transparent 62%,#d6efcf 62%)}
+
+  /* できること */
+  .do-list{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .do{display:flex;gap:14px;align-items:flex-start;padding:20px}
+  .do .ic{flex:none;width:58px;height:58px;border-radius:14px;background:var(--green-l);display:grid;place-items:center;color:var(--green-d)}
+  .do .ic svg.i{width:34px;height:34px}
+  .do h3{font-weight:800;font-size:18px;color:var(--green-d);line-height:1.5;margin-bottom:4px}
+  .do p{font-size:14px;color:var(--sub);line-height:1.8}
+  @media (max-width:900px){.do-list{grid-template-columns:repeat(2,1fr)}}
+  @media (max-width:600px){.do-list{grid-template-columns:1fr;gap:10px}.do{padding:14px}.do .ic{width:50px;height:50px}}
+
+  /* 事業所 */
+  .office{padding:0;overflow:hidden}
+  .office-h{display:flex;gap:16px;align-items:center;padding:20px 22px;background:var(--green-l)}
+  .office.b .office-h{background:var(--blue-l)}
+  .office-h .pic{flex:none;width:124px;height:88px;border-radius:12px;background:#fff;display:grid;place-items:center}
+  .office-h .pic svg{width:78px;height:60px}
+  .office-h .pic img{width:100%;height:100%;object-fit:contain;padding:4px}
+  .office .tag{display:inline-block;font-size:12px;font-weight:700;color:#fff;background:var(--green-d);border-radius:999px;padding:1px 12px}
+  .office.b .tag{background:var(--blue-d)}
+  .office h3{font-weight:800;font-size:clamp(19px,2.4vw,23px);line-height:1.4;margin:4px 0 2px}
+  .office .who{font-weight:700;font-size:14px;color:var(--green-d)}
+  .office.b .who{color:var(--blue-d)}
+  .office-b{padding:18px 22px 22px}
+  dl.info{display:grid;grid-template-columns:auto 1fr;column-gap:12px}
+  dl.info dt,dl.info dd{padding:9px 0;border-bottom:1px solid var(--line);font-size:15px}
+  dl.info dt{display:flex;align-items:flex-start;gap:6px;font-weight:700;color:var(--sub);white-space:nowrap}
+  dl.info dt svg.i{width:18px;height:18px;color:var(--green);margin-top:5px}
+  .office.b dl.info dt svg.i{color:var(--blue)}
+  dl.info dd a{color:var(--green-d);font-weight:700;font-size:17px}
+  .office.b dl.info dd a{color:var(--blue-d)}
+  .sub-h{font-weight:800;font-size:16px;margin:20px 0 8px;color:var(--ink)}
+  table.cap{width:100%;border-collapse:separate;border-spacing:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;text-align:center;table-layout:fixed}
+  table.cap th{background:var(--green-l);font-size:14px;padding:4px 0;color:var(--green-dd)}
+  .office.b table.cap th{background:var(--blue-l);color:var(--blue-d)}
+  table.cap td{font-size:20px;font-weight:800;padding:2px 0;line-height:1.6}
+  table.cap th+th,table.cap td+td{border-left:1px solid var(--line)}
+  .cap .o{color:var(--green)} .cap .t{color:#c9771d} .cap .x{color:#8a948f}
+  .cap-note{font-size:12px;color:var(--sub);margin-top:6px}
+  ol.flow-day{list-style:none}
+  ol.flow-day li{display:grid;grid-template-columns:5.2em 1fr;gap:8px;padding:6px 0;font-size:15px;border-bottom:1px dashed var(--line)}
+  ol.flow-day li span{font-weight:700;color:var(--green-d)}
+  .office.b ol.flow-day li span{color:var(--blue-d)}
+  @media (max-width:420px){.office-h{padding:16px}.office-h .pic{width:92px;height:66px}.office-h .pic svg{width:60px;height:48px}.office-b{padding:14px 16px 18px}}
+
+  /* 料金 */
+  .fee{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .fee div{text-align:center;padding:20px 12px;border-radius:var(--r);background:var(--blue-l)}
+  .fee div:nth-child(2){background:var(--green-l)}
+  .fee .who{font-size:14px;color:var(--ink);font-weight:700;min-height:3.4em;display:grid;place-items:center;line-height:1.6}
+  .fee .yen{font-family:"M PLUS Rounded 1c",sans-serif;font-weight:800;font-size:clamp(30px,4.2vw,40px);color:var(--blue-d);line-height:1.3}
+  .fee div:nth-child(2) .yen{color:var(--green-d)}
+  .fee .yen small{font-size:15px;color:var(--ink)}
+  @media (max-width:600px){.fee{grid-template-columns:1fr;gap:10px}.fee .who{min-height:auto}}
+
+  /* ご利用までの流れ */
+  .steps{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+  .steps li{position:relative;display:flex;flex-direction:column;align-items:center;text-align:center;padding:22px 16px 18px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;right:-17px;top:50%;width:12px;height:12px;border-top:3px solid var(--green);border-right:3px solid var(--green);transform:translateY(-50%) rotate(45deg)}
+  .steps .no{width:34px;height:34px;border-radius:50%;background:var(--green);color:#fff;font-weight:800;display:grid;place-items:center;font-family:"M PLUS Rounded 1c",sans-serif;margin-bottom:6px}
+  .steps .ic svg.i{width:40px;height:40px;color:var(--green-d)}
+  .steps h3{font-weight:800;font-size:17px;color:var(--green-d);margin:4px 0}
+  .steps p{font-size:14px;color:var(--sub);text-align:left;line-height:1.8}
+  @media (max-width:900px){
+    .steps{grid-template-columns:1fr;gap:14px}
+    .steps li{display:grid;grid-template-columns:34px 44px 1fr;column-gap:12px;align-items:center;text-align:left;padding:14px 16px}
+    .steps li:not(:last-child)::after{right:auto;left:29px;top:auto;bottom:-15px;width:9px;height:9px;transform:rotate(135deg)}
+    .steps .no{margin:0}
+    .steps .ic svg.i{width:36px;height:36px}
+    .steps .tx{min-width:0}
+    .steps h3{margin:0}
+  }
+
+  /* スタッフ */
+  .staff .svc{display:block;text-align:center}
+  .staff-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
+  .staff .num{font-family:"M PLUS Rounded 1c",sans-serif;font-weight:800;font-size:32px;color:var(--green-d);line-height:1.4}
+  .staff .svc.b .num{color:var(--blue-d)}
+  .staff-row h3{font-size:15px;line-height:1.5;color:var(--ink);margin:0}
+
+  /* FAQ */
+  .faq{max-width:860px;display:flex;flex-direction:column;gap:10px}
+  .faq-item{background:#fff;border-radius:14px;border:1px solid var(--line);box-shadow:var(--shadow);overflow:hidden}
+  .faq-q{width:100%;display:flex;align-items:center;gap:12px;text-align:left;background:none;border:0;padding:16px 18px;font:inherit;font-weight:700;cursor:pointer;color:inherit}
+  .faq-q::before{content:"Q";flex:none;width:32px;height:32px;border-radius:50%;background:var(--green);color:#fff;display:grid;place-items:center;font-family:"M PLUS Rounded 1c",sans-serif}
+  .faq-q::after{content:"＋";margin-left:auto;color:var(--green);font-size:20px;flex:none}
+  .faq-q[aria-expanded="true"]::after{content:"－"}
+  .faq-a{display:none;padding:0 20px 18px 62px;font-size:15px}
+  .faq-a.open{display:block}
+
+  /* お問い合わせ */
+  .contact-lead{font-weight:700;margin-bottom:6px}
+  .tels{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:16px 0 26px}
+  .tels a{display:flex;align-items:center;gap:14px;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);border-radius:16px;padding:16px 18px;text-decoration:none}
+  .tels a:hover{border-color:var(--green)}
+  .tels svg.i{width:34px;height:34px;color:var(--green)}
+  .tels b{display:block;font-family:"M PLUS Rounded 1c",sans-serif;font-size:clamp(22px,3vw,27px);color:var(--green-d);line-height:1.3}
+  .tels small{display:block;font-size:13px;font-weight:700;color:var(--sub);line-height:1.5}
+  @media (max-width:600px){.tels{grid-template-columns:1fr;gap:10px}}
+  .form-card{max-width:860px}
+  .form-card h3{display:flex;align-items:center;gap:8px;font-size:20px;color:var(--green-d)}
+  .form-card h3 svg.i{width:26px;height:26px}
+  form .row{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+  @media (max-width:600px){form .row{grid-template-columns:1fr;gap:0}}
+  form label{display:block;font-weight:700;font-size:14px;margin-bottom:4px}
+  form .req{color:#fff;background:#c23a50;font-size:11px;border-radius:6px;padding:1px 6px;margin-left:6px;vertical-align:2px}
+  form input,form select,form textarea{width:100%;font:inherit;font-size:16px;padding:12px 14px;border:2px solid var(--line);border-radius:12px;background:#fff;color:var(--ink)}
+  form input:focus,form select:focus,form textarea:focus{outline:none;border-color:var(--green)}
+  form .f{margin-bottom:14px}
+  .form-err{display:none;background:#fdecee;color:#a3283d;border-radius:12px;padding:10px 14px;margin-bottom:12px;font-weight:700}
+  .form-err.show{display:block}
+
+  /* フッター（薄緑に町並み） */
+  footer{position:relative;background:var(--green-l);color:var(--ink);padding:0 0 24px;font-size:14px}
+  .town{display:block;width:100%;height:70px;color:#cfe8c9}
+  .town-img{display:block;width:100%;height:auto;max-height:110px;object-fit:cover;object-position:center bottom}
+  .foot{display:grid;grid-template-columns:auto 1fr 1fr;gap:28px;padding-top:12px}
+  .foot .fl b{font-family:"M PLUS Rounded 1c",sans-serif;font-weight:800;font-size:34px;color:var(--green-d);letter-spacing:.06em}
+  footer h3{font-size:16px;margin-bottom:4px;color:var(--green-dd)}
+  footer a{color:var(--green-dd);font-weight:700}
+  footer .copy{margin-top:22px;padding-top:14px;border-top:1px solid #cfe3cb;text-align:center;color:var(--sub);font-size:12px}
+  @media (max-width:760px){.foot{grid-template-columns:1fr;gap:16px}footer{padding-bottom:96px}}
+
+  /* 下に固定のボタン（スマホ） */
+  .float-cta{position:fixed;left:10px;right:10px;bottom:10px;z-index:40;display:none;gap:8px}
+  .float-cta a{flex:1;display:flex;align-items:center;justify-content:center;gap:6px;text-decoration:none;font-weight:700;font-size:15px;color:#fff;background:var(--green-d);border-radius:14px;padding:13px 4px;box-shadow:0 6px 18px rgba(0,0,0,.2)}
+  .float-cta svg.i{width:20px;height:20px}
+  @media (max-width:760px){.float-cta{display:flex}}
+
+  .reveal{opacity:0;transform:translateY(16px);transition:opacity .6s,transform .6s}
+  .reveal.on{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style>
 </head>
 <body>
 
-<!-- NAV -->
-<nav>
-  <a href="#" class="nav-logo">
-    <div class="nav-logo-icon">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#5aab97" opacity="0.25"/><circle cx="12" cy="12" r="6" fill="#5aab97"/></svg>
-    </div>
-    結い
-  </a>
-  <ul class="nav-links">
-    <li><a href="#offices">各事業所を見る</a></li>
-    <li><a href="#contact" class="nav-cta">お問い合わせ</a></li>
-  </ul>
-  <button class="nav-toggle" id="nav-toggle" aria-label="メニューを開く" aria-expanded="false"><span></span></button>
-</nav>
+<!-- 線のアイコン（ここで1回だけ定義して、下で使い回す） -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-sprout" viewBox="0 0 24 24"><path d="M12 21v-9"/><path d="M12 12C12 8 9 5.5 4 5.5c0 4 3 6.5 8 6.5z"/><path d="M12 10c0-3.5 2.7-6 7.5-6 0 3.8-2.8 6-7.5 6z"/></symbol>
+    <symbol id="i-car" viewBox="0 0 24 24"><path d="M3.5 16.5v-4.2l2-4.8h13l2 4.8v4.2z"/><path d="M3.5 12.3h17"/><circle cx="7.5" cy="16.8" r="2"/><circle cx="16.5" cy="16.8" r="2"/></symbol>
+    <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/><path d="M7.5 14h2M11 14h2M14.5 14h2M7.5 17.5h2M11 17.5h2"/></symbol>
+    <symbol id="i-food" viewBox="0 0 24 24"><path d="M5 3v5a2.5 2.5 0 0 0 5 0V3M7.5 3v18"/><path d="M17 3c-2 0-3 2.2-3 4.6S15 12 17 12s3-2 3-4.4S19 3 17 3zM17 12v9"/></symbol>
+    <symbol id="i-people" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3"/><path d="M6.5 20c0-3.3 2.5-5.6 5.5-5.6s5.5 2.3 5.5 5.6"/><circle cx="5" cy="10" r="2.2"/><circle cx="19" cy="10" r="2.2"/><path d="M1.5 18.5c0-2.4 1.5-4 3.5-4.2M22.5 18.5c0-2.4-1.5-4-3.5-4.2"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M2.5 5.5c3.4-1.2 6.6-.8 9.5 1.2v13c-2.9-2-6.1-2.4-9.5-1.2zM21.5 5.5c-3.4-1.2-6.6-.8-9.5 1.2v13c2.9-2 6.1-2.4 9.5-1.2z"/></symbol>
+    <symbol id="i-cap" viewBox="0 0 24 24"><path d="M1.5 9L12 4l10.5 5L12 14z"/><path d="M6 11v5c3.5 2.6 8.5 2.6 12 0v-5M22.5 9v6"/></symbol>
+    <symbol id="i-ball" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7.5l4 2.9-1.5 4.6h-5L8 10.4z"/><path d="M12 7.5V3.2M16 10.4l4.2-1.4M14.5 15l2.6 3.6M9.5 15l-2.6 3.6M8 10.4L3.8 9"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2.5" y="5" width="19" height="14" rx="2"/><path d="M3 6.5l9 6.5 9-6.5"/></symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24"><path d="M6 2.5h8.5l4 4V21.5H6z"/><path d="M14.5 2.5v4h4M9 11.5h6.5M9 15h6.5M9 18.5h4"/></symbol>
+    <symbol id="i-hand" viewBox="0 0 24 24"><path d="M1.5 11.5L5 8l3.5 1.5L12 7.5l3.5.8 2.5-1.8 4.5 4"/><path d="M5 8v6l4.5 4.3a1.4 1.4 0 0 0 2-2"/><path d="M11.5 16.3l1.3 1.3a1.4 1.4 0 0 0 2-2l-1-1"/><path d="M13.8 14.6l1.1 1.1a1.4 1.4 0 0 0 2-2L19 11.5V7"/><path d="M12 7.5l-3.2 3.2a1.5 1.5 0 0 0 2.1 2.1L13 11l3.8 2.8"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5.2 3h3.6l1.9 4.8-2.5 1.6a11.5 11.5 0 0 0 6.4 6.4l1.6-2.5L21 15.2v3.6a2.2 2.2 0 0 1-2.2 2.2A17.8 17.8 0 0 1 3 5.2 2.2 2.2 0 0 1 5.2 3z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21.5s-7-6-7-11.5a7 7 0 0 1 14 0c0 5.5-7 11.5-7 11.5z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/></symbol>
+    <symbol id="i-fax" viewBox="0 0 24 24"><path d="M6 9V3h9l3 3v3"/><rect x="3" y="9" width="18" height="9" rx="2"/><path d="M7 18v3h10v-3M7 13h2"/></symbol>
+    <symbol id="i-bus" viewBox="0 0 24 24"><rect x="3.5" y="4" width="17" height="13" rx="2.5"/><path d="M3.5 11h17M8 17v2.5M16 17v2.5"/><circle cx="7.5" cy="14" r=".6"/><circle cx="16.5" cy="14" r=".6"/></symbol>
+    <symbol id="i-off" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4M9.5 13.5l5 5M14.5 13.5l-5 5"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6.5h16M4 12h16M4 17.5h16"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+    <!-- 建物の絵（事業所カード用） -->
+    <symbol id="p-house" viewBox="0 0 78 60"><path d="M4 56h70" stroke="#9fd39a" stroke-width="3" stroke-linecap="round"/><path d="M12 30L39 9l27 21" fill="#f5f9fc" stroke="#7a8f9e" stroke-width="2" stroke-linejoin="round"/><rect x="16" y="28" width="46" height="28" fill="#fff" stroke="#7a8f9e" stroke-width="2"/><path d="M8 32L39 8l31 24" fill="none" stroke="#5f8fb8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><rect x="22" y="34" width="10" height="9" rx="1" fill="#cfe5f5" stroke="#7a8f9e" stroke-width="1.5"/><rect x="46" y="34" width="10" height="9" rx="1" fill="#cfe5f5" stroke="#7a8f9e" stroke-width="1.5"/><rect x="34" y="40" width="10" height="16" rx="1" fill="#e9d2b3" stroke="#7a8f9e" stroke-width="1.5"/><circle cx="8" cy="49" r="6" fill="#8fce88"/><circle cx="70" cy="48" r="7" fill="#8fce88"/></symbol>
+    <!-- 風景（ヒーローの背景）：空・富士山・山なみ・湖・緑の丘・若葉 -->
+    <linearGradient id="g-lake" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b9daf0"/><stop offset="1" stop-color="#e3f1fa"/></linearGradient>
+    <linearGradient id="g-fuji" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7f9fc0"/><stop offset="1" stop-color="#a9c3db"/></linearGradient>
+    <linearGradient id="g-fade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff"/></linearGradient>
+    <g id="land">
+      <ellipse cx="1180" cy="90" rx="160" ry="34" fill="#fff" opacity=".7"/><ellipse cx="1290" cy="110" rx="110" ry="24" fill="#fff" opacity=".6"/><ellipse cx="560" cy="70" rx="130" ry="22" fill="#fff" opacity=".45"/>
+      <path d="M0 360 C160 300 300 320 420 290 C540 262 640 300 760 286 L760 400 L0 400z" fill="#c9dcea"/>
+      <path d="M1440 350 C1320 300 1220 318 1120 300 C1060 290 1010 300 960 310 L960 400 L1440 400z" fill="#c4d8e8"/>
+      <path d="M700 380 L900 214 C930 190 948 176 966 170 L1004 170 C1022 176 1040 190 1070 214 L1270 380z" fill="url(#g-fuji)"/>
+      <path d="M900 214 C930 190 948 176 966 170 L1004 170 C1022 176 1040 190 1070 214 L1052 226 L1034 214 L1016 232 L998 212 L980 234 L962 214 L944 230 L926 214 L912 226z" fill="#fff"/>
+      <rect x="0" y="372" width="1440" height="70" fill="url(#g-lake)"/>
+      <path d="M760 388 h240 M820 400 h150 M1060 392 h120 M300 396 h160" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".8"/>
+      <path d="M0 440 C220 410 420 432 620 418 C860 400 1080 430 1440 408 L1440 600 L0 600z" fill="#cfe9c7"/>
+      <path d="M0 480 C260 452 500 476 760 462 C1020 448 1220 470 1440 456 L1440 600 L0 600z" fill="#b5dfaa"/>
+      <g fill="#86c97e"><circle cx="1180" cy="452" r="16"/><circle cx="1200" cy="446" r="20"/><circle cx="1222" cy="454" r="14"/><circle cx="120" cy="470" r="14"/><circle cx="140" cy="464" r="18"/></g>
+      <g fill="#7cc576" opacity=".95"><ellipse cx="1400" cy="40" rx="46" ry="18" transform="rotate(-30 1400 40)"/><ellipse cx="1350" cy="20" rx="40" ry="15" transform="rotate(20 1350 20)"/><ellipse cx="1420" cy="96" rx="38" ry="14" transform="rotate(-60 1420 96)"/><ellipse cx="1310" cy="62" rx="30" ry="12" transform="rotate(-10 1310 62)"/></g>
+      <g fill="#a6dc9b" opacity=".9"><ellipse cx="1380" cy="70" rx="30" ry="11" transform="rotate(35 1380 70)"/><ellipse cx="1270" cy="30" rx="28" ry="10" transform="rotate(-25 1270 30)"/></g>
+      <g fill="#7cc576" opacity=".9"><ellipse cx="40" cy="560" rx="50" ry="18" transform="rotate(-35 40 560)"/><ellipse cx="96" cy="580" rx="40" ry="15" transform="rotate(15 96 580)"/><ellipse cx="20" cy="510" rx="34" ry="12" transform="rotate(-70 20 510)"/></g>
+      <rect x="0" y="500" width="1440" height="100" fill="url(#g-fade)"/>
+    </g>
+  </defs>
+</svg>
 
-<!-- MOBILE MENU -->
-<div class="mobile-menu" id="mobile-menu">
-  <a href="#offices">各事業所を見る</a>
-  <a href="#contact" class="mobile-cta">お問い合わせ</a>
+<header>
+  <div class="wrap" style="position:relative">
+    <div class="hbar">
+      <a class="logo" href="#top" aria-label="結い トップへ"><b>結い</b><small>放課後等デイサービス・児童発達支援</small></a>
+      <button class="menu-btn" id="menuBtn" aria-label="メニューを開く" aria-expanded="false" aria-controls="gnav"><svg class="i"><use href="#i-menu"/></svg></button>
+      <nav class="gnav" id="gnav">
+        <a href="#about">サービスについて</a>
+        <a href="#support">できること</a>
+        <a href="#offices">事業所</a>
+        <a href="#fee">料金</a>
+        <a href="#faq">よくある質問</a>
+        <a href="#contact" class="cta">見学・体験のお申し込み</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ヒーロー -->
+<div class="hero">
+  <img class="bgimg" src="assets/hero.png" alt="" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()">
+  <svg class="bg pc" viewBox="0 0 1440 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#land"/></svg>
+  <svg class="bg sp" viewBox="640 0 800 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#land"/></svg>
+  <div class="wrap hero-in">
+    <p class="area">山梨県甲府市</p>
+    <h1 class="catch">
+      <span>放課後等デイサービス <em class="yui">結い</em></span>
+      <span>児童発達支援 <em class="yui">結い</em></span>
+    </h1>
+    <div class="badges">
+      <div><svg class="i"><use href="#i-sprout"/></svg><span>未就学の<wbr>お子さまから<br>高校生まで</span></div>
+      <div><svg class="i"><use href="#i-car"/></svg><span>送迎あり<br>（甲府市内）</span></div>
+      <div><svg class="i"><use href="#i-cal"/></svg><span>見学・体験は<br>いつでも</span></div>
+    </div>
+    <a class="btn btn-g" href="#contact"><svg class="i"><use href="#i-cal"/></svg>見学・体験のお申し込みはこちら</a>
+  </div>
 </div>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-bg"></div>
-  <div class="blob blob-1"></div>
-  <div class="blob blob-2"></div>
-  <div class="blob blob-3"></div>
-  <div class="blob blob-4"></div>
-  <div class="hero-content">
-    <div class="hero-badge">株式会社仁-JIN-</div>
-    <h1 class="hero-title">結い</h1>
-    <p class="hero-sub">
-      放課後等デイサービス・児童発達支援<br>
-      山梨県甲府市・笛吹市　全3事業所
-    </p>
-    <div class="hero-btns">
-      <a href="#offices" class="btn btn-fill">各事業所を見る</a>
-      <a href="#contact" class="btn btn-outline">お問い合わせ</a>
+<!-- サービスについて -->
+<section id="about">
+  <div class="wrap">
+    <div class="sec-h reveal"><h2>放課後等デイサービス・児童発達支援とは</h2><p>どちらも、発達に心配のあるお子さまが通う、国の制度にもとづく福祉サービスです。</p></div>
+    <div class="grid2">
+      <div class="card svc g reveal">
+        <img class="pic" src="assets/bag.png" alt="" onload="this.nextElementSibling.remove()" onerror="this.remove()"><svg class="pic" viewBox="0 0 96 96" aria-hidden="true"><path d="M26 30c0-10 8-16 22-16s22 6 22 16v46c0 4-3 6-6 6H32c-3 0-6-2-6-6z" fill="#f6c94a" stroke="#c99a1c" stroke-width="2.5"/><path d="M26 34c6 6 38 6 44 0v14c-6 6-38 6-44 0z" fill="#e9b630" stroke="#c99a1c" stroke-width="2.5"/><rect x="43" y="44" width="10" height="9" rx="2" fill="#fff" stroke="#c99a1c" stroke-width="2"/><path d="M34 16c0-6 28-6 28 0" fill="none" stroke="#a87c12" stroke-width="3" stroke-linecap="round"/><path d="M30 60v18M66 60v18" stroke="#c99a1c" stroke-width="2"/></svg>
+        <div><span class="tag">小学生〜高校生</span><h3>放課後等デイサービス</h3>
+        <p>学校が終わったあとや、夏休みなど学校がお休みの日に通う場所です。生活に必要な力を身につけたり、お友だちや地域の人と関わったりする経験を積みます。</p></div>
+      </div>
+      <div class="card svc b reveal">
+        <img class="pic" src="assets/blocks.png" alt="" onload="this.nextElementSibling.remove()" onerror="this.remove()"><svg class="pic" viewBox="0 0 96 96" aria-hidden="true"><rect x="12" y="54" width="28" height="28" rx="3" fill="#7fc0ea" stroke="#3f84b6" stroke-width="2.5"/><rect x="44" y="54" width="28" height="28" rx="3" fill="#8fd18a" stroke="#4c9a47" stroke-width="2.5"/><rect x="28" y="26" width="28" height="28" rx="3" fill="#f6c94a" stroke="#c99a1c" stroke-width="2.5"/><path d="M58 50L72 26l14 24z" fill="#f29a8c" stroke="#c4645a" stroke-width="2.5" stroke-linejoin="round"/><text x="26" y="74" font-size="15" font-weight="700" fill="#fff" text-anchor="middle" font-family="sans-serif">あ</text><text x="58" y="74" font-size="15" font-weight="700" fill="#fff" text-anchor="middle" font-family="sans-serif">い</text></svg>
+        <div><span class="tag">未就学のお子さま</span><h3>児童発達支援</h3>
+        <p>小学校に入る前のお子さまが通う場所です。身のまわりのことなど毎日の生活の基本や、集団の中で過ごすことに少しずつ慣れていけるよう支援します。</p></div>
+      </div>
+    </div>
+    <p class="note reveal">ご利用には、お住まいの市町村が発行する「受給者証」が必要です。障害者手帳がなくても利用できる場合があります。</p>
+  </div>
+</section>
+
+<!-- お悩み -->
+<section class="alt" id="worry">
+  <div class="wrap">
+    <div class="sec-h reveal"><h2>こんなお悩みはありませんか？</h2></div>
+    <ul class="worry reveal">
+      <li>ことばで気持ちを伝えるのが苦手</li>
+      <li>お友だちとの関わり方が心配</li>
+      <li>集団の中でじっとしているのが難しい</li>
+      <li>身のまわりのことを自分でできるようにしたい</li>
+      <li>入学に向けて準備をしておきたい</li>
+      <li>宿題や学習でつまずきがある</li>
+      <li>放課後や長い休みの過ごし方に困っている</li>
+      <li>発達のことを気軽に相談できる場所がほしい</li>
+    </ul>
+    <p class="worry-foot reveal">見学・体験のときに、<em>お気軽にご相談ください</em>。</p>
+  </div>
+</section>
+
+<!-- できること -->
+<section id="support">
+  <div class="wrap">
+    <div class="sec-h reveal"><h2><span class="yui">結い</span>でできること</h2><p>年齢や発達の段階に合わせて、毎日の活動を組み立てています。</p></div>
+    <div class="do-list">
+      <div class="card do reveal"><div class="ic"><svg class="i"><use href="#i-food"/></svg></div><div><h3>生活の力</h3><p>身じたく・食事・片付け・トイレなど、毎日の生活に必要なことを、できるところから少しずつ。</p></div></div>
+      <div class="card do reveal"><div class="ic"><svg class="i"><use href="#i-people"/></svg></div><div><h3>人と関わる力</h3><p>集団あそびやルールのある遊びを通して、順番を待つ・気持ちを伝えるなど、お友だちとの関わり方を練習します。</p></div></div>
+      <div class="card do reveal"><div class="ic"><svg class="i"><use href="#i-book"/></svg></div><div><h3>学習のサポート</h3><p>学校の宿題を見守り、つまずいているところは一人ひとりの理解に合わせてサポートします。</p></div></div>
+      <div class="card do reveal"><div class="ic"><svg class="i"><use href="#i-cap"/></svg></div><div><h3>入学に向けた準備</h3><p>児童発達支援では、年長さんを中心に、小学校の生活を見すえた活動を取り入れています。</p></div></div>
+      <div class="card do reveal"><div class="ic"><svg class="i"><use href="#i-ball"/></svg></div><div><h3>あそび・のびのび時間</h3><p>自由あそびやおやつの時間も大切に。安心できる場所で、ほっとひと息つける時間をつくります。</p></div></div>
+      <div class="card do reveal"><div class="ic"><svg class="i"><use href="#i-car"/></svg></div><div><h3>送迎・ご家族の支え</h3><p>学校・ご自宅への送迎を行っています。ご家庭での困りごとのご相談や、関係機関との連携もお手伝いします。</p></div></div>
     </div>
   </div>
 </section>
 
-<!-- OFFICE TABS -->
-<section id="offices">
-  <div class="office-section">
-    <div class="office-section-header reveal">
-      <div class="section-label">OUR OFFICES</div>
-      <h2 class="section-title">3つの事業所</h2>
-      <p class="section-desc">事業所を選んでご確認ください。</p>
+<!-- 事業所 -->
+<section class="sky" id="offices">
+  <div class="wrap">
+    <div class="sec-h reveal"><h2>事業所のご案内</h2><p>甲府市内に2つの事業所があります。</p></div>
+    <div class="grid2">
+
+      <article class="card office reveal" id="houkago">
+        <div class="office-h">
+          <div class="pic"><img src="assets/house.png" alt="" onload="this.nextElementSibling.remove()" onerror="this.remove()"><svg aria-hidden="true"><use href="#p-house"/></svg></div>
+          <div><span class="tag">放課後等デイサービス</span><h3>放課後等デイサービス <span class="yui">結い</span></h3><p class="who">小学生〜高校生（6歳〜18歳）</p></div>
+        </div>
+        <div class="office-b">
+          <dl class="info">
+            <dt><svg class="i"><use href="#i-pin"/></svg>所在地</dt><dd>山梨県甲府市住吉5丁目3-27</dd>
+            <dt><svg class="i"><use href="#i-phone"/></svg>電話</dt><dd><a href="tel:07090477573">070-9047-7573</a></dd>
+            <dt><svg class="i"><use href="#i-fax"/></svg>FAX</dt><dd>055-213-5878<small>（2事業所共通）</small></dd>
+            <dt><svg class="i"><use href="#i-clock"/></svg>開所時間</dt><dd>平日 11:00〜17:30<br>学校休業日 10:00〜17:00<br><small>（夏休み・創立記念日など）</small></dd>
+            <dt><svg class="i"><use href="#i-bus"/></svg>送迎時間</dt><dd>平日 17:30〜18:00<br>学校休業日 9:30〜10:00／17:00〜17:30</dd>
+            <dt><svg class="i"><use href="#i-off"/></svg>お休み</dt><dd>土・日・祝日、お盆、年末年始</dd>
+          </dl>
+          <h4 class="sub-h">受け入れ状況（曜日ごとの目安）</h4>
+          <table class="cap"><tr><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th></tr><tr><td class="x">×</td><td class="x">×</td><td class="x">×</td><td class="x">×</td><td class="x">×</td></tr></table>
+          <p class="cap-note">○ 6〜10人　△ 1〜5人　× 空きなし（キャンセル待ちのご相談は受け付けています）</p>
+          <h4 class="sub-h">1日の流れ（平日の例）</h4>
+          <ol class="flow-day">
+            <li><span>放課後</span>各学校へお迎え</li>
+            <li><span>15:00</span>おやつ</li>
+            <li><span>　</span>自由あそび・集団活動</li>
+            <li><span>16:30</span>学習（宿題など）</li>
+            <li><span>17:00</span>片付け・帰りの支度</li>
+            <li><span>17:30〜</span>送迎・帰宅</li>
+          </ol>
+        </div>
+      </article>
+
+      <article class="card office b reveal" id="jihatsu">
+        <div class="office-h">
+          <div class="pic"><img src="assets/house-jihatsu.png" alt="" onload="this.nextElementSibling.remove()" onerror="if(!this.dataset.f){this.dataset.f=1;this.src='assets/house.png'}else this.remove()"><svg aria-hidden="true"><use href="#p-house"/></svg></div>
+          <div><span class="tag">児童発達支援</span><h3>児童発達支援 <span class="yui">結い</span></h3><p class="who">未就学のお子さま（0歳〜6歳）</p></div>
+        </div>
+        <div class="office-b">
+          <dl class="info">
+            <dt><svg class="i"><use href="#i-pin"/></svg>所在地</dt><dd>山梨県甲府市上曽根町208-1</dd>
+            <dt><svg class="i"><use href="#i-phone"/></svg>電話</dt><dd><a href="tel:09085737520">090-8573-7520</a></dd>
+            <dt><svg class="i"><use href="#i-fax"/></svg>FAX</dt><dd>055-213-5878<small>（2事業所共通）</small></dd>
+            <dt><svg class="i"><use href="#i-clock"/></svg>開所時間</dt><dd>平日・第2・第4土曜 9:00〜16:00</dd>
+            <dt><svg class="i"><use href="#i-bus"/></svg>送迎時間</dt><dd>9:00〜9:30／16:00〜16:30</dd>
+            <dt><svg class="i"><use href="#i-off"/></svg>お休み</dt><dd>第1・第3・第5土曜、日曜、祝日、お盆、年末年始</dd>
+          </dl>
+          <h4 class="sub-h">受け入れ状況（曜日ごとの目安）</h4>
+          <table class="cap"><tr><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th>土</th></tr><tr><td class="o">○</td><td class="o">○</td><td class="t">△</td><td class="o">○</td><td class="o">○</td><td class="o">○</td></tr></table>
+          <p class="cap-note">○ 6〜10人　△ 1〜5人　× 空きなし</p>
+          <h4 class="sub-h">1日の流れ（平日の例）</h4>
+          <ol class="flow-day">
+            <li><span>9:00</span>送迎</li>
+            <li><span>10:00</span>朝の会</li>
+            <li><span>　</span>午前の活動</li>
+            <li><span>12:00</span>昼食</li>
+            <li><span>12:45</span>お昼寝（〜14:45）</li>
+            <li><span>13:45</span>就学に向けた活動（年長さんのみ・お昼寝の途中から）</li>
+            <li><span>15:00</span>おやつ</li>
+            <li><span>15:30</span>支度・帰りの会</li>
+            <li><span>16:00〜</span>送迎・帰宅</li>
+          </ol>
+        </div>
+      </article>
+
     </div>
-
-    <div class="tab-bar">
-      <button class="tab-btn active-a" data-tab="a">
-        <div class="tab-icon">🌿</div>放課後等デイサービス結い
-      </button>
-      <button class="tab-btn" data-tab="b">
-        <div class="tab-icon">🌸</div>児童発達支援結い
-      </button>
-      <button class="tab-btn" data-tab="c">
-        <div class="tab-icon">☀️</div>児童発達支援結いふえふき
-      </button>
-    </div>
-
-    <!-- ▶ PANE A -->
-    <div class="tab-pane pane-a active" id="pane-a">
-      <div class="office-info-card">
-        <div class="office-hero-block">
-          <div>
-            <div class="office-type-badges"><span class="type-badge">放課後等デイサービス</span></div>
-            <div class="office-name">放課後等デイサービス結い</div>
-            <p class="office-desc">対象：小学生〜高校生（6歳〜18歳）<br>学校の放課後および学校休業日に利用できる療育支援サービスです。</p>
-          </div>
-          <div class="office-meta">
-            <div class="meta-row"><div class="meta-icon">📍</div><div><div class="meta-label">所在地</div><div class="meta-value">山梨県甲府市住吉5丁目3-27</div></div></div>
-            <div class="meta-row"><div class="meta-icon">📞</div><div><div class="meta-label">電話番号</div><div class="meta-value">070-9047-7573</div></div></div>
-            <div class="meta-row"><div class="meta-icon">🕐</div><div><div class="meta-label">開所時間</div><div class="meta-value">平日　11:00〜17:30<br>学校休業日　10:00〜17:00<span style="display:block;font-size:0.78em;color:var(--text-muted);margin-top:2px;">（夏休み、創立記念日など）</span></div></div></div>
-            <div class="meta-row"><div class="meta-icon">🚌</div><div><div class="meta-label">送迎時間</div><div class="meta-value">平日　17:30〜18:00<br>学校休業日　9:30〜10:00 ／ 17:00〜17:30</div></div></div>
-            <div class="meta-row"><div class="meta-icon">📅</div><div><div class="meta-label">定休日</div><div class="meta-value">土・日・祝日・お盆・年末年始</div></div></div>
-          </div>
-        </div>
-        <div class="office-stats">
-          <div class="stat-item"><div class="stat-num">6〜18歳</div><div class="stat-label">対象年齢</div></div>
-          <div class="stat-item"><div class="stat-num">放課後デイ</div><div class="stat-label">サービス種別</div></div>
-          <div class="stat-item"><div class="stat-num">甲府市</div><div class="stat-label">住吉エリア</div></div>
-          <div class="stat-item"><div class="stat-num">送迎あり</div><div class="stat-label">要相談</div></div>
-        </div>
-      </div>
-
-      <div class="sub-section">
-        <h3 class="sub-title">受け入れ状況</h3>
-        <p style="font-size:0.8rem;color:var(--text-muted);margin-bottom:14px;margin-top:-8px;">月〜金の受け入れ可能人数の目安です。</p>
-        <div class="capacity-grid">
-          <div class="cap-item"><div class="cap-day">月</div><div class="cap-mark cap-x">×</div></div>
-          <div class="cap-item"><div class="cap-day">火</div><div class="cap-mark cap-x">×</div></div>
-          <div class="cap-item"><div class="cap-day">水</div><div class="cap-mark cap-x">×</div></div>
-          <div class="cap-item"><div class="cap-day">木</div><div class="cap-mark cap-x">×</div></div>
-          <div class="cap-item"><div class="cap-day">金</div><div class="cap-mark cap-x">×</div></div>
-        </div>
-        <div class="capacity-legend">
-          <div class="legend-item"><span class="legend-mark cap-o">○</span><span>6〜10人</span></div>
-          <div class="legend-item"><span class="legend-mark cap-t">△</span><span>1〜5人</span></div>
-          <div class="legend-item"><span class="legend-mark cap-x">×</span><span>0人</span></div>
-        </div>
-      </div>
-
-      <div class="sub-section">
-        <h3 class="sub-title">1日の流れ</h3>
-        <p style="font-size:0.8rem;color:var(--text-muted);margin-bottom:14px;margin-top:-8px;">（平日の一例）</p>
-        <div class="timeline-strip">
-          <div class="tl-item"><div class="tl-emoji">🚌</div><div class="tl-time">&nbsp;</div><div class="tl-label">各学校へお迎え</div></div>
-          <div class="tl-item"><div class="tl-emoji">🍊</div><div class="tl-time">15:00</div><div class="tl-label">おやつ</div></div>
-          <div class="tl-item tl-flex"><div class="tl-emoji">🎮</div><div class="tl-time-none">&nbsp;</div><div class="tl-label">自由あそび・集団活動</div></div>
-          <div class="tl-item"><div class="tl-emoji">✏️</div><div class="tl-time">16:30</div><div class="tl-label">学習</div></div>
-          <div class="tl-item"><div class="tl-emoji">🎒</div><div class="tl-time">17:00</div><div class="tl-label">片付け・帰り支度</div></div>
-          <div class="tl-item"><div class="tl-emoji">🏠</div><div class="tl-time">17:30〜</div><div class="tl-label">送迎・帰宅</div></div>
-        </div>
-      </div>
-
-      <div class="sub-section">
-        <h3 class="sub-title">スタッフ</h3>
-        <div class="staff-grid">
-          <div class="staff-card"><div class="staff-name">児童発達支援管理者</div><div class="staff-role">1名</div></div>
-          <div class="staff-card"><div class="staff-name">児童指導員</div><div class="staff-role">2名</div></div>
-        </div>
-      </div>
-
-
-      <div class="sub-section">
-        <h3 class="sub-title">料金</h3>
-        <div class="fee-grid">
-          <div class="fee-card">
-            <h4>月額上限額 <span class="fee-tag">世帯収入別</span></h4>
-            <div class="fee-row"><span>生活保護・低所得世帯</span><strong>0円</strong></div>
-            <div class="fee-row"><span>一般1（年収約890万円以下）</span><strong>4,600円</strong></div>
-            <div class="fee-row"><span>一般2（それ以上）</span><strong>37,200円</strong></div>
-          </div>
-          <div class="fee-card">
-            <h4>その他の費用</h4>
-            <div class="fee-row"><span>基本的な費用負担</span><strong>なし</strong></div>
-            <div class="fee-row"><span>施設利用・体験等の費用</span><strong>実費</strong></div>
-          </div>
-          <div class="fee-note">※ 利用料は1割負担で月額上限があります。受給者証の取得にはお住まいの市区町村窓口にお問い合わせください。</div>
-        </div>
-      </div>
-    </div><!-- /pane-a -->
-
-    <!-- ▶ PANE B -->
-    <div class="tab-pane pane-b" id="pane-b">
-      <div class="office-info-card">
-        <div class="office-hero-block">
-          <div>
-            <div class="office-type-badges"><span class="type-badge">児童発達支援</span></div>
-            <div class="office-name">児童発達支援結い</div>
-            <p class="office-desc">対象：未就学児（0歳〜6歳）<br>日常生活の基本動作の習得・集団生活への適応を支援する早期療育サービスです。</p>
-          </div>
-          <div class="office-meta">
-            <div class="meta-row"><div class="meta-icon">📍</div><div><div class="meta-label">所在地</div><div class="meta-value">山梨県甲府市上曽根町208-1</div></div></div>
-            <div class="meta-row"><div class="meta-icon">📞</div><div><div class="meta-label">電話番号</div><div class="meta-value">090-8573-7520</div></div></div>
-            <div class="meta-row"><div class="meta-icon">🕐</div><div><div class="meta-label">開所時間</div><div class="meta-value">平日・第2,4土曜　9:00〜16:00</div></div></div>
-            <div class="meta-row"><div class="meta-icon">📅</div><div><div class="meta-label">定休日</div><div class="meta-value">第1,3,5土曜、日曜、祝日<br>お盆、年末年始</div></div></div>
-          </div>
-        </div>
-        <div class="office-stats">
-          <div class="stat-item"><div class="stat-num">0〜6歳</div><div class="stat-label">対象年齢</div></div>
-          <div class="stat-item"><div class="stat-num">児発支援</div><div class="stat-label">サービス種別</div></div>
-          <div class="stat-item"><div class="stat-num">甲府市</div><div class="stat-label">上曽根エリア</div></div>
-          <div class="stat-item"><div class="stat-num">送迎あり</div><div class="stat-label">要相談</div></div>
-        </div>
-      </div>
-
-      <div class="sub-section">
-        <h3 class="sub-title">受け入れ状況</h3>
-        <p style="font-size:0.8rem;color:var(--text-muted);margin-bottom:14px;margin-top:-8px;">月〜土の受け入れ可能人数の目安です。</p>
-        <div class="capacity-grid">
-          <div class="cap-item"><div class="cap-day">月</div><div class="cap-mark cap-o">○</div></div>
-          <div class="cap-item"><div class="cap-day">火</div><div class="cap-mark cap-o">○</div></div>
-          <div class="cap-item"><div class="cap-day">水</div><div class="cap-mark cap-t">△</div></div>
-          <div class="cap-item"><div class="cap-day">木</div><div class="cap-mark cap-o">○</div></div>
-          <div class="cap-item"><div class="cap-day">金</div><div class="cap-mark cap-o">○</div></div>
-          <div class="cap-item"><div class="cap-day">土</div><div class="cap-mark cap-o">○</div></div>
-        </div>
-        <div class="capacity-legend">
-          <div class="legend-item"><span class="legend-mark cap-o">○</span><span>6〜10人</span></div>
-          <div class="legend-item"><span class="legend-mark cap-t">△</span><span>1〜5人</span></div>
-          <div class="legend-item"><span class="legend-mark cap-x">×</span><span>0人</span></div>
-        </div>
-      </div>
-
-      <div class="sub-section">
-        <h3 class="sub-title">1日の流れ</h3>
-        <p style="font-size:0.8rem;color:var(--text-muted);margin-bottom:14px;margin-top:-8px;">（平日の一例）</p>
-        <div class="timeline-strip">
-          <div class="tl-item"><div class="tl-emoji">🚌</div><div class="tl-time">9:00〜9:30</div><div class="tl-label">送迎</div></div>
-          <div class="tl-item"><div class="tl-emoji">🎵</div><div class="tl-time">10:00</div><div class="tl-label">朝の会</div></div>
-          <div class="tl-item tl-flex"><div class="tl-emoji">🧩</div><div class="tl-time-none">&nbsp;</div><div class="tl-label">午前の活動</div></div>
-          <div class="tl-item"><div class="tl-emoji">🍱</div><div class="tl-time">12:00</div><div class="tl-label">昼食</div></div>
-          <div class="tl-item"><div class="tl-emoji">😴</div><div class="tl-time">12:45〜14:45</div><div class="tl-label">お昼寝</div></div>
-          <div class="tl-item tl-flex"><div class="tl-emoji">📚</div><div class="tl-time-none" style="color:var(--text-muted);font-style:normal;font-weight:700;">13:45</div><div class="tl-label">就学に向けた<br>活動<br><span style="font-size:0.7rem;color:var(--text-muted);">年長児のみ</span></div></div>
-          <div class="tl-item"><div class="tl-emoji">🍊</div><div class="tl-time">15:00</div><div class="tl-label">おやつ</div></div>
-          <div class="tl-item"><div class="tl-emoji">🎒</div><div class="tl-time">15:30</div><div class="tl-label">支度・帰りの会</div></div>
-          <div class="tl-item"><div class="tl-emoji">🏠</div><div class="tl-time">16:00〜16:30</div><div class="tl-label">送迎・帰宅</div></div>
-        </div>
-      </div>
-
-      <div class="sub-section">
-        <h3 class="sub-title">スタッフ</h3>
-        <div class="staff-grid">
-          <div class="staff-card"><div class="staff-name">児童発達支援管理者</div><div class="staff-role">1名</div></div>
-          <div class="staff-card"><div class="staff-name">児童指導員</div><div class="staff-role">2名</div></div>
-        </div>
-      </div>
-
-
-      <div class="sub-section">
-        <h3 class="sub-title">料金</h3>
-        <div class="fee-grid">
-          <div class="fee-card">
-            <h4>月額上限額 <span class="fee-tag">世帯収入別</span></h4>
-            <div class="fee-row"><span>生活保護・低所得世帯</span><strong>0円</strong></div>
-            <div class="fee-row"><span>一般1（年収約890万円以下）</span><strong>4,600円</strong></div>
-            <div class="fee-row"><span>一般2（それ以上）</span><strong>37,200円</strong></div>
-          </div>
-          <div class="fee-card">
-            <h4>その他の費用</h4>
-            <div class="fee-row"><span>基本的な費用負担</span><strong>なし</strong></div>
-            <div class="fee-row"><span>施設利用・体験等の費用</span><strong>実費</strong></div>
-          </div>
-          <div class="fee-note">※ 利用料は1割負担で月額上限があります。受給者証の取得にはお住まいの市区町村窓口にお問い合わせください。</div>
-        </div>
-      </div>
-    </div><!-- /pane-b -->
-
-    <!-- ▶ PANE C -->
-    <div class="tab-pane pane-c" id="pane-c">
-      <div class="office-info-card">
-        <div class="office-hero-block">
-          <div>
-            <div class="office-type-badges"><span class="type-badge">児童発達支援</span></div>
-            <div class="office-name">児童発達支援結いふえふき</div>
-            <p class="office-desc">対象：未就学児（0歳〜6歳）<br>日常生活の基本動作の習得・集団生活への適応を支援する早期療育サービスです。</p>
-          </div>
-          <div class="office-meta">
-            <div class="meta-row"><div class="meta-icon">📍</div><div><div class="meta-label">所在地</div><div class="meta-value">山梨県笛吹市石和町下平井356-3</div></div></div>
-            <div class="meta-row"><div class="meta-icon">📞</div><div><div class="meta-label">電話番号</div><div class="meta-value">090-3601-5212</div></div></div>
-            <div class="meta-row"><div class="meta-icon">🕐</div><div><div class="meta-label">開所時間</div><div class="meta-value">平日・第2,4土曜　9:30〜16:00</div></div></div>
-            <div class="meta-row"><div class="meta-icon">🚌</div><div><div class="meta-label">送迎時間</div><div class="meta-value">9:00〜9:30 ／ 16:00〜16:30</div></div></div>
-            <div class="meta-row"><div class="meta-icon">📅</div><div><div class="meta-label">定休日</div><div class="meta-value">第1,3,5土曜、日曜、祝日<br>お盆、年末年始</div></div></div>
-          </div>
-        </div>
-        <div class="office-stats">
-          <div class="stat-item"><div class="stat-num">0〜6歳</div><div class="stat-label">対象年齢</div></div>
-          <div class="stat-item"><div class="stat-num">児発支援</div><div class="stat-label">サービス種別</div></div>
-          <div class="stat-item"><div class="stat-num">笛吹市</div><div class="stat-label">石和エリア</div></div>
-          <div class="stat-item"><div class="stat-num">送迎あり</div><div class="stat-label">要相談</div></div>
-        </div>
-      </div>
-
-      <div class="sub-section">
-        <h3 class="sub-title">受け入れ状況</h3>
-        <p style="font-size:0.8rem;color:var(--text-muted);margin-bottom:14px;margin-top:-8px;">月〜土の受け入れ可能人数の目安です。</p>
-        <div class="capacity-grid">
-          <div class="cap-item"><div class="cap-day">月</div><div class="cap-mark cap-t">△</div></div>
-          <div class="cap-item"><div class="cap-day">火</div><div class="cap-mark cap-t">△</div></div>
-          <div class="cap-item"><div class="cap-day">水</div><div class="cap-mark cap-t">△</div></div>
-          <div class="cap-item"><div class="cap-day">木</div><div class="cap-mark cap-o">○</div></div>
-          <div class="cap-item"><div class="cap-day">金</div><div class="cap-mark cap-o">○</div></div>
-          <div class="cap-item"><div class="cap-day">土</div><div class="cap-mark cap-o">○</div></div>
-        </div>
-        <div class="capacity-legend">
-          <div class="legend-item"><span class="legend-mark cap-o">○</span><span>6〜10人</span></div>
-          <div class="legend-item"><span class="legend-mark cap-t">△</span><span>1〜5人</span></div>
-          <div class="legend-item"><span class="legend-mark cap-x">×</span><span>0人</span></div>
-        </div>
-      </div>
-
-      <div class="sub-section">
-        <h3 class="sub-title">1日の流れ</h3>
-        <p style="font-size:0.8rem;color:var(--text-muted);margin-bottom:14px;margin-top:-8px;">（平日の一例）</p>
-        <div class="timeline-strip">
-          <div class="tl-item"><div class="tl-emoji">🚌</div><div class="tl-time">9:00〜9:30</div><div class="tl-label">送迎</div></div>
-          <div class="tl-item"><div class="tl-emoji">🎵</div><div class="tl-time">10:00</div><div class="tl-label">朝の会</div></div>
-          <div class="tl-item tl-flex"><div class="tl-emoji">🧩</div><div class="tl-time-none">&nbsp;</div><div class="tl-label">午前の活動</div></div>
-          <div class="tl-item"><div class="tl-emoji">🍱</div><div class="tl-time">12:00</div><div class="tl-label">昼食</div></div>
-          <div class="tl-item"><div class="tl-emoji">😴</div><div class="tl-time">12:45〜14:45</div><div class="tl-label">お昼寝</div></div>
-          <div class="tl-item tl-flex"><div class="tl-emoji">📚</div><div class="tl-time-none" style="color:var(--text-muted);font-style:normal;font-weight:700;">13:45</div><div class="tl-label">就学に向けた<br>活動<br><span style="font-size:0.7rem;color:var(--text-muted);">年長児のみ</span></div></div>
-          <div class="tl-item"><div class="tl-emoji">🍊</div><div class="tl-time">15:00</div><div class="tl-label">おやつ</div></div>
-          <div class="tl-item"><div class="tl-emoji">🎒</div><div class="tl-time">15:30</div><div class="tl-label">支度・帰りの会</div></div>
-          <div class="tl-item"><div class="tl-emoji">🏠</div><div class="tl-time">16:00〜16:30</div><div class="tl-label">送迎・帰宅</div></div>
-        </div>
-      </div>
-
-      <div class="sub-section">
-        <h3 class="sub-title">スタッフ</h3>
-        <div class="staff-grid">
-          <div class="staff-card"><div class="staff-name">児童発達支援管理者</div><div class="staff-role">1名</div></div>
-          <div class="staff-card"><div class="staff-name">児童指導員</div><div class="staff-role">2名</div></div>
-        </div>
-      </div>
-
-
-      <div class="sub-section">
-        <h3 class="sub-title">料金</h3>
-        <div class="fee-grid">
-          <div class="fee-card">
-            <h4>月額上限額 <span class="fee-tag">世帯収入別</span></h4>
-            <div class="fee-row"><span>生活保護・低所得世帯</span><strong>0円</strong></div>
-            <div class="fee-row"><span>一般1（年収約890万円以下）</span><strong>4,600円</strong></div>
-            <div class="fee-row"><span>一般2（それ以上）</span><strong>37,200円</strong></div>
-          </div>
-          <div class="fee-card">
-            <h4>その他の費用</h4>
-            <div class="fee-row"><span>基本的な費用負担</span><strong>なし</strong></div>
-            <div class="fee-row"><span>施設利用・体験等の費用</span><strong>実費</strong></div>
-          </div>
-          <div class="fee-note">※ 利用料は1割負担で月額上限があります。受給者証の取得にはお住まいの市区町村窓口にお問い合わせください。</div>
-        </div>
-      </div>
-    </div><!-- /pane-c -->
-
+    <p class="note reveal">送迎は、原則として事業所から片道15分程度の範囲で行っています。くわしくはお問い合わせください。</p>
   </div>
 </section>
 
-<!-- セクション区切り（タブ→FAQ） -->
-<div class="section-divider" aria-hidden="true">
-  <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-    <path d="M0,30 Q360,80 720,40 T1440,30 L1440,80 L0,80 Z" fill="#e8f4f1"/>
-  </svg>
-</div>
+<!-- 料金 -->
+<section id="fee">
+  <div class="wrap">
+    <div class="sec-h reveal"><h2>ご利用料金の目安</h2><p>国の制度により、利用料の1割がご負担です。月ごとの上限額があり、それ以上はかかりません。</p></div>
+    <div class="fee reveal">
+      <div><p class="who">生活保護・住民税非課税の世帯</p><p class="yen">0<small> 円／月</small></p></div>
+      <div><p class="who">住民税課税世帯<br>（年収およそ890万円まで）</p><p class="yen">4,600<small> 円／月</small></p></div>
+      <div><p class="who">上記以外の世帯</p><p class="yen">37,200<small> 円／月</small></p></div>
+    </div>
+    <ul class="note reveal">
+      <li>児童発達支援は、3歳になって最初の4月から小学校に入るまでの3年間、利用料の負担がありません（幼児教育・保育の無償化）。</li>
+      <li>おやつ代・行事の参加費などの実費は、事前にお知らせしたうえで別にいただくことがあります。</li>
+      <li>ご利用には、お住まいの市町村が発行する「受給者証」が必要です。くわしい負担額は、市町村の障害福祉の窓口でご確認いただけます。</li>
+    </ul>
+  </div>
+</section>
 
-<!-- FAQ -->
-<section class="faq-section" id="faq">
-  <div class="faq-inner">
-    <h2 class="faq-title">よくある質問</h2>
-    <div class="faq-shared">
+<!-- ご利用の流れ -->
+<section class="alt" id="flow">
+  <div class="wrap">
+    <div class="sec-h reveal"><h2>ご利用までの流れ</h2><p>受給者証の申請の進め方なども、見学のときにくわしくご案内します。</p></div>
+    <ol class="steps">
+      <li class="card reveal"><span class="no">1</span><span class="ic"><svg class="i"><use href="#i-mail"/></svg></span><div class="tx"><h3>お問い合わせ</h3><p>お電話か、下のフォームからお気軽にご連絡ください。</p></div></li>
+      <li class="card reveal"><span class="no">2</span><span class="ic"><svg class="i"><use href="#i-people"/></svg></span><div class="tx"><h3>見学・体験</h3><p>お子さまと一緒に、実際の雰囲気を見ていただけます。</p></div></li>
+      <li class="card reveal"><span class="no">3</span><span class="ic"><svg class="i"><use href="#i-doc"/></svg></span><div class="tx"><h3>受給者証の申請</h3><p>お住まいの市町村の窓口で申請します。手続きのしかたもお手伝いします。</p></div></li>
+      <li class="card reveal"><span class="no">4</span><span class="ic"><svg class="i"><use href="#i-hand"/></svg></span><div class="tx"><h3>ご契約・利用開始</h3><p>支援の計画を一緒に考えて、ご利用スタートです。</p></div></li>
+    </ol>
+  </div>
+</section>
 
-      <h3 class="faq-cat-title">1. 利用手続きについて</h3>
-      <div class="faq-list">
-        <div class="faq-item"><div class="faq-q">療育を検討し始めたばかりですが、まず何が必要ですか？<div class="faq-icon">＋</div></div><div class="faq-a">未就学のお子様（児童発達支援）も、就学後のお子様（放課後等デイサービス）も、自治体が発行する「受給者証」が必要です。障害者手帳がない方でも、医師の診断書等により自治体から必要性が認められれば、受給者証の発行・利用が可能です。</div></div>
-        <div class="faq-item"><div class="faq-q">相談員（ワーカーさん）の探し方や、手続きの進め方がわかりません。<div class="faq-icon">＋</div></div><div class="faq-a">まずはお住まいの市区町村の障害福祉窓口や、地域の相談支援事業所へご相談ください。手続きは少し複雑に感じられるかもしれませんが、当施設で見学・体験をされる際に、具体的な申請手順などを詳しくアドバイスさせていただきます。</div></div>
+<!-- スタッフ -->
+<section class="staff" id="staff">
+  <div class="wrap">
+    <div class="sec-h reveal"><h2>スタッフ</h2><p>資格と経験をもつスタッフが、お子さまをサポートします。</p></div>
+    <div class="grid2">
+      <div class="card svc g reveal">
+        <span class="tag">放課後等デイサービス <span class="yui">結い</span></span>
+        <div class="staff-row">
+          <div><p class="num">1<small style="font-size:16px">名</small></p><h3>児童発達支援<br>管理責任者</h3></div>
+          <div><p class="num">2<small style="font-size:16px">名</small></p><h3>児童指導員</h3></div>
+        </div>
       </div>
-
-      <h3 class="faq-cat-title">2. 結いでの支援・サービスについて</h3>
-      <div class="faq-list">
-        <div class="faq-item"><div class="faq-q">見学や体験はできますか？<div class="faq-icon">＋</div></div><div class="faq-a">はい、随時受け付けております。実際にお子様が楽しんで通えるか、雰囲気を肌で感じていただくことが大切です。まずはお電話かメールでお気軽にご連絡ください。</div></div>
-        <div class="faq-item"><div class="faq-q">送迎サービスはありますか？<div class="faq-icon">＋</div></div><div class="faq-a">はい、ございます。原則として事業所から片道15分程度を対象範囲としています。</div></div>
+      <div class="card svc b reveal">
+        <span class="tag">児童発達支援 <span class="yui">結い</span></span>
+        <div class="staff-row">
+          <div><p class="num">1<small style="font-size:16px">名</small></p><h3>児童発達支援<br>管理責任者</h3></div>
+          <div><p class="num">2<small style="font-size:16px">名</small></p><h3>児童指導員</h3></div>
+        </div>
       </div>
+    </div>
+    <p class="reveal" style="max-width:860px;margin-top:16px">一人ひとりの特性や、その日の体調・気持ちに合わせて関わり方を工夫しています。お子さまの様子は、送迎のときや連絡帳でていねいにお伝えします。</p>
+  </div>
+</section>
 
+<!-- よくある質問 -->
+<section class="sky" id="faq">
+  <div class="wrap">
+    <div class="sec-h reveal"><h2>よくある質問</h2></div>
+    <div class="faq">
+      <div class="faq-item reveal"><button class="faq-q" aria-expanded="false">療育を考え始めたばかりです。まず何が必要ですか？</button><div class="faq-a">児童発達支援（未就学）も放課後等デイサービス（小学生〜高校生）も、お住まいの市町村が発行する「受給者証」が必要です。障害者手帳がなくても、医師の意見書などで必要性が認められれば、受給者証を受けて利用できます。</div></div>
+      <div class="faq-item reveal"><button class="faq-q" aria-expanded="false">相談員さんの探し方や、手続きの進め方がわかりません。</button><div class="faq-a">まずはお住まいの市町村の障害福祉の窓口や、地域の相談支援事業所にご相談ください。見学・体験にお越しいただいたときに、申請の手順もくわしくご案内します。</div></div>
+      <div class="faq-item reveal"><button class="faq-q" aria-expanded="false">見学や体験はできますか？</button><div class="faq-a">はい、いつでも受け付けています。お子さまが楽しく通えそうか、実際の雰囲気を見ていただくのがいちばんです。お電話かフォームでお気軽にご連絡ください。</div></div>
+      <div class="faq-item reveal"><button class="faq-q" aria-expanded="false">送迎はありますか？</button><div class="faq-a">はい、あります。原則として、事業所から片道15分程度の範囲を対象にしています。学校やご自宅の場所によって変わるので、まずはご相談ください。</div></div>
+      <div class="faq-item reveal"><button class="faq-q" aria-expanded="false">空きがない曜日でも相談できますか？</button><div class="faq-a">はい。空きの状況は月ごとに変わります。キャンセル待ちや、ほかの曜日でのご利用など、ご家庭の予定に合わせて一緒に考えます。</div></div>
+      <div class="faq-item reveal"><button class="faq-q" aria-expanded="false">ほかの事業所と一緒に使えますか？</button><div class="faq-a">はい、曜日を分けて併用していただけます（同じ日に2か所を使うことはできません）。無理のない通い方を一緒に考えます。</div></div>
     </div>
   </div>
 </section>
 
-<!-- CONTACT -->
-<section class="contact-section" id="contact">
-  <div class="contact-inner">
-    <h2>お問い合わせ</h2>
-    <p>お電話またはメールフォームよりご連絡ください。</p>
-    <div class="contact-cards">
-      <a href="tel:07090477573" class="contact-card">
-        <div class="cc-icon">📞</div>
-        <div class="cc-label">放課後等デイサービス結い</div>
-        <div class="cc-value">070-9047-7573</div>
-      </a>
-      <a href="tel:09085737520" class="contact-card">
-        <div class="cc-icon">📞</div>
-        <div class="cc-label">児童発達支援結い</div>
-        <div class="cc-value">090-8573-7520</div>
-      </a>
-      <a href="tel:09036015212" class="contact-card">
-        <div class="cc-icon">📞</div>
-        <div class="cc-label">児童発達支援結いふえふき</div>
-        <div class="cc-value">090-3601-5212</div>
-      </a>
+<!-- お問い合わせ -->
+<section id="contact">
+  <div class="wrap">
+    <div class="sec-h reveal"><h2>お問い合わせ</h2><p>見学・体験・ご相談は、いつでも受け付けています。</p></div>
+    <p class="contact-lead reveal">まずはお気軽にお電話ください。<small style="font-weight:400;color:var(--sub)">　FAX：055-213-5878（2事業所共通）</small></p>
+    <div class="tels reveal">
+      <a href="tel:07090477573"><svg class="i"><use href="#i-phone"/></svg><span><b>070-9047-7573</b><small>放課後等デイサービス <span class="yui">結い</span>（小学生〜高校生）</small></span></a>
+      <a href="tel:09085737520"><svg class="i"><use href="#i-phone"/></svg><span><b>090-8573-7520</b><small>児童発達支援 <span class="yui">結い</span>（未就学のお子さま）</small></span></a>
     </div>
 
-    <div class="contact-form-wrap">
-      <div class="form-row">
-        <div class="form-group">
-          <label class="form-label">保護者名 <span>※必須</span></label>
-          <input type="text" class="form-input" id="f-parent" placeholder="山田 太郎">
+    <div class="card form-card reveal">
+      <h3><svg class="i"><use href="#i-mail"/></svg>メールでのお問い合わせ</h3>
+      <p class="note" style="margin:4px 0 16px">送信ボタンを押すと、お使いのメールアプリが開きます。内容をご確認のうえ送信してください。</p>
+      <form id="contactForm" novalidate>
+        <div class="form-err" id="formErr" role="alert"></div>
+        <div class="row">
+          <div class="f"><label for="f-parent">保護者のお名前<span class="req">必須</span></label><input id="f-parent" autocomplete="name"></div>
+          <div class="f"><label for="f-child">お子さまのお名前<span class="req">必須</span></label><input id="f-child"></div>
         </div>
-        <div class="form-group">
-          <label class="form-label">児童名 <span>※必須</span></label>
-          <input type="text" class="form-input" id="f-child" placeholder="山田 花子">
+        <div class="row">
+          <div class="f"><label for="f-office">ご希望の事業所</label><select id="f-office"><option value="">選んでください</option><option>放課後等デイサービス結い</option><option>児童発達支援結い</option><option>まだ決めていない</option></select></div>
+          <div class="f"><label for="f-grade">学年・年齢</label><select id="f-grade"><option value="">選んでください</option><option>未就学（0〜2歳）</option><option>未就学（3〜5歳）</option><option>小学1〜3年生</option><option>小学4〜6年生</option><option>中学生</option><option>高校生</option></select></div>
         </div>
-      </div>
-      <div class="form-row">
-        <div class="form-group">
-          <label class="form-label">学校名</label>
-          <input type="text" class="form-input" id="f-school" placeholder="○○小学校">
+        <div class="row">
+          <div class="f"><label for="f-school">学校・園の名前</label><input id="f-school"></div>
+          <div class="f"><label for="f-type">お問い合わせの種類</label><select id="f-type"><option value="">選んでください</option><option>見学・体験の申し込み</option><option>サービス内容の質問</option><option>空き状況の確認</option><option>その他</option></select></div>
         </div>
-        <div class="form-group">
-          <label class="form-label">学年</label>
-          <select class="form-select" id="f-grade">
-            <option value="">選択してください</option>
-            <option>未就学</option>
-            <option>小学1年生</option>
-            <option>小学2年生</option>
-            <option>小学3年生</option>
-            <option>小学4年生</option>
-            <option>小学5年生</option>
-            <option>小学6年生</option>
-            <option>中学1年生</option>
-            <option>中学2年生</option>
-            <option>中学3年生</option>
-            <option>高校1年生</option>
-            <option>高校2年生</option>
-            <option>高校3年生</option>
-          </select>
-        </div>
-      </div>
-      <div class="form-row">
-        <div class="form-group">
-          <label class="form-label">性別</label>
-          <select class="form-select" id="f-gender">
-            <option value="">選択してください</option>
-            <option>男の子</option>
-            <option>女の子</option>
-            <option>回答しない</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label class="form-label">お問い合わせの種類</label>
-          <select class="form-select" id="f-type">
-            <option value="">選択してください</option>
-            <option>見学・体験の申し込み</option>
-            <option>サービス内容の質問</option>
-            <option>その他</option>
-          </select>
-        </div>
-      </div>
-      <div class="form-row">
-        <div class="form-group full">
-          <label class="form-label">確認したいこと</label>
-          <textarea class="form-textarea" id="f-message" placeholder="ご質問・ご要望などをご記入ください。"></textarea>
-        </div>
-      </div>
-      <button class="form-submit" id="form-submit-btn">メールを送信する</button>
-      <p class="form-note">※ ボタンを押すとメールアプリが開きます。送信前に内容をご確認ください。</p>
+        <div class="f"><label for="f-message">ご質問・ご希望の日時など</label><textarea id="f-message" rows="5"></textarea></div>
+        <div style="text-align:center"><button type="submit" class="btn btn-g"><svg class="i"><use href="#i-mail"/></svg>メールアプリで送る</button></div>
+      </form>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
+</main>
+
 <footer>
-  <div class="footer-inner" style="text-align:center;">
-    <div class="footer-logo" style="justify-content:center; margin-bottom:12px;">
-      <div class="footer-logo-icon">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#5aab97" opacity="0.3"/><circle cx="12" cy="12" r="6" fill="#5aab97"/></svg>
+  <img class="town-img" src="assets/footer.png" alt="" onload="this.nextElementSibling.remove()" onerror="this.remove()"><svg class="town" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><rect width="1440" height="70" fill="#fff"/><path fill="currentColor" d="M0 70V52h40V40l14-10 14 10v12h30V36h36v16h24V44l20-14 20 14v8h40V28h12v-8h12v8h12v24h36V40h44v12h26V34l18-12 18 12v18h40V46h28V30h40v22h20V40l16-12 16 12v12h36V38h30v14h30V26h14V16h14v10h14v26h40V42l22-16 22 16v10h30V34h46v18h24V40h34v12h28V30l18-12 18 12v22h40V44h30V32h38v20h26V40l14-10 14 10v12h40V36h30v16h24V42l20-14 20 14v10h44V30h12v-8h12v8h12v22h34V40h40v12h26V36l16-12 16 12v16h20V70z"/></svg>
+  <div class="wrap">
+    <div class="foot">
+      <div class="fl"><b>結い</b></div>
+      <div>
+        <h3>放課後等デイサービス <span class="yui">結い</span></h3>
+        <p>山梨県甲府市住吉5丁目3-27<br>TEL <a href="tel:07090477573">070-9047-7573</a>／FAX 055-213-5878<br>平日 11:00〜17:30／学校休業日 10:00〜17:00</p>
       </div>
-      結い
+      <div>
+        <h3>児童発達支援 <span class="yui">結い</span></h3>
+        <p>山梨県甲府市上曽根町208-1<br>TEL <a href="tel:09085737520">090-8573-7520</a>／FAX 055-213-5878<br>平日・第2・第4土曜 9:00〜16:00</p>
+      </div>
     </div>
-    <p class="footer-brand-desc" style="max-width:100%; margin-bottom:16px;">株式会社仁-JIN-<br>放課後等デイサービス・児童発達支援<br>甲府市（住吉・上曽根町）・笛吹市（石和町）</p>
+    <p class="copy">運営：株式会社仁-JIN-　©<span class="yui">結い</span></p>
   </div>
 </footer>
 
+<div class="float-cta" aria-label="お問い合わせ">
+  <a href="#contact"><svg class="i"><use href="#i-phone"/></svg>電話する</a>
+  <a href="#contact"><svg class="i"><use href="#i-cal"/></svg>見学・体験の申し込み</a>
+</div>
 
 <script>
-document.addEventListener('DOMContentLoaded', function () {
+(function(){
+  // メニュー（スマホ）
+  var btn=document.getElementById('menuBtn'),nav=document.getElementById('gnav'),ico=btn.querySelector('use');
+  function setMenu(o){nav.classList.toggle('open',o);btn.setAttribute('aria-expanded',o);btn.setAttribute('aria-label',o?'メニューを閉じる':'メニューを開く');ico.setAttribute('href',o?'#i-close':'#i-menu');}
+  btn.addEventListener('click',function(){setMenu(!nav.classList.contains('open'));});
+  nav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){setMenu(false);});});
 
-  // ハンバーガーメニュー
-  var navToggle = document.getElementById('nav-toggle');
-  var mobileMenu = document.getElementById('mobile-menu');
-  if (navToggle && mobileMenu) {
-    navToggle.addEventListener('click', function() {
-      var isOpen = mobileMenu.classList.toggle('open');
-      navToggle.classList.toggle('open', isOpen);
-      navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-    });
-    // メニュー内リンクをタップしたら閉じる
-    mobileMenu.querySelectorAll('a').forEach(function(a) {
-      a.addEventListener('click', function() {
-        mobileMenu.classList.remove('open');
-        navToggle.classList.remove('open');
-        navToggle.setAttribute('aria-expanded', 'false');
-      });
-    });
-  }
-
-  // タブ切り替え（堅牢版：イベント委譲＋currentTargetフォールバック）
-  function activateTab(id) {
-    if (!id) return;
-    var targetPane = document.getElementById('pane-' + id);
-    if (!targetPane) { console.warn('[yui] pane not found:', 'pane-' + id); return; }
-    document.querySelectorAll('.tab-pane').forEach(function(p) { p.classList.remove('active'); });
-    document.querySelectorAll('.tab-btn').forEach(function(b) {
-      b.classList.remove('active-a', 'active-b', 'active-c');
-    });
-    targetPane.classList.add('active');
-    var btn = document.querySelector('.tab-btn[data-tab="' + id + '"]');
-    if (btn) btn.classList.add('active-' + id);
-  }
-  // クリックは tab-bar に委譲（ボタン内のアイコン/テキストどこを押してもOK）
-  var tabBar = document.querySelector('.tab-bar');
-  if (tabBar) {
-    tabBar.addEventListener('click', function(e) {
-      var btn = e.target.closest('.tab-btn');
-      if (!btn) return;
-      activateTab(btn.dataset.tab);
-    });
-  }
-
-  // FAQ開閉
-  document.querySelectorAll('.faq-q').forEach(function(q) {
-    q.addEventListener('click', function() {
-      this.closest('.faq-item').classList.toggle('open');
-    });
+  // よくある質問の開閉
+  document.querySelectorAll('.faq-q').forEach(function(q){
+    q.addEventListener('click',function(){var a=q.nextElementSibling,o=a.classList.toggle('open');q.setAttribute('aria-expanded',o);});
   });
 
-  // メール送信ボタン
-  var submitBtn = document.getElementById('form-submit-btn');
-  if (submitBtn) submitBtn.addEventListener('click', sendMail);
+  // 問い合わせ（メールアプリを開く）
+  document.getElementById('contactForm').addEventListener('submit',function(e){
+    e.preventDefault();
+    var v=function(id){return document.getElementById(id).value.trim();};
+    var err=document.getElementById('formErr');
+    if(!v('f-parent')||!v('f-child')){err.textContent='保護者のお名前と、お子さまのお名前を入れてください。';err.classList.add('show');return;}
+    err.classList.remove('show');
+    var type=v('f-type')||'その他';
+    var subject=encodeURIComponent('【結い】お問い合わせ：'+type);
+    var body=encodeURIComponent(
+      '【お問い合わせの種類】'+type+'\n'+
+      '【ご希望の事業所】'+(v('f-office')||'未選択')+'\n\n'+
+      '【保護者のお名前】'+v('f-parent')+'\n'+
+      '【お子さまのお名前】'+v('f-child')+'\n'+
+      '【学年・年齢】'+(v('f-grade')||'未選択')+'\n'+
+      '【学校・園】'+(v('f-school')||'未記入')+'\n\n'+
+      '【ご質問・ご希望の日時など】\n'+(v('f-message')||'未記入')+'\n\n'+
+      '---\nこのメールは結いホームページのお問い合わせフォームから作成されました。');
+    location.href='mailto:kit.yui.ta0419@gmail.com?subject='+subject+'&body='+body;
+  });
 
-  // メール送信
-  function sendMail() {
-    var parent  = document.getElementById('f-parent').value.trim();
-    var child   = document.getElementById('f-child').value.trim();
-    var school  = document.getElementById('f-school').value.trim();
-    var grade   = document.getElementById('f-grade').value;
-    var gender  = document.getElementById('f-gender').value;
-    var type    = document.getElementById('f-type').value;
-    var message = document.getElementById('f-message').value.trim();
-
-    if (!parent || !child) {
-      alert('保護者名と児童名は必須です。');
-      return;
-    }
-
-    var subject = encodeURIComponent('【結い】お問い合わせ：' + (type || 'その他'));
-    var body = encodeURIComponent(
-      '【お問い合わせ種類】' + (type || '未選択') + '\n\n' +
-      '【保護者名】' + parent + '\n' +
-      '【児童名】' + child + '\n' +
-      '【学校名】' + (school || '未記入') + '\n' +
-      '【学年】' + (grade || '未選択') + '\n' +
-      '【性別】' + (gender || '未選択') + '\n\n' +
-      '【確認したいこと】\n' + (message || '未記入') + '\n\n' +
-      '---\n' +
-      'このメールは結いホームページのお問い合わせフォームから送信されました。'
-    );
-
-    window.location.href = 'mailto:kit.yui.ta0419@gmail.com?subject=' + subject + '&body=' + body;
-  }
- 
-  var reveals = document.querySelectorAll('.reveal');
-  var observer = new IntersectionObserver(function(entries) {
-    entries.forEach(function(entry) {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.1 });
-  reveals.forEach(function(el) { observer.observe(el); });
-
-});
+  // ふわっと表示
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('on');});return;}
+  var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('on');io.unobserve(en.target);}});},{rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(e){io.observe(e);});
+})();
 </script>
 </body>
 </html>
